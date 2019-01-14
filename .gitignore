@@ -10,4 +10,9 @@ docs/
 demos/
 generated_src
 *.log
-
+*.iml
+.idea
+.codeintel
+log
+npm-debug.log
+.env
