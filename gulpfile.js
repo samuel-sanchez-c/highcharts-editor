@@ -236,9 +236,9 @@ gulp.task('less', function () {
     return gulp.src('less/theme.default.less')
                .pipe(less({
                     paths: ['less/'],
-                    compress: true
+                    compress: false
                }))
-               .pipe(rename(name + '.min.css'))
+               .pipe(rename(name + '.css'))
                .pipe(gulp.dest(dest))
                .pipe(gulp.dest(electronDest))
                .pipe(gulp.dest(wpPluginDest))
