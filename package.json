@@ -7,7 +7,7 @@
   "scripts": {
     "install": "gulp",
     "lint": "eslint src/*",
-    "precommit": "lint-staged"
+    "precommit": "gulp with-advanced"
   },
   "lint-staged": {
     "src/*.js": [
