@@ -1,0 +1,18 @@
+{
+  "name": "highcharts-editor",
+  "description": "Custom build for IGM Gravity",
+  "main": ["dist/highcharts-editor.complete.js","dist/highcarts-editor.min.css"],
+  "authors": [
+    "Chris Vasseng <christer@highsoft.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/igmtechnology/highcharts-editor",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
