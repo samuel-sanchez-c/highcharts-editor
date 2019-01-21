@@ -1,7 +1,7 @@
 {
   "name": "highcharts-editor",
   "description": "Custom build for IGM Gravity",
-  "main": ["dist/highcharts-editor.complete.js","dist/highcarts-editor.css"],
+  "main": ["dist/highcharts-editor.js"],
   "authors": [
     "Chris Vasseng <christer@highsoft.com>"
   ],
