@@ -10,7 +10,6 @@ var dest = 'dist/',
     less = require('gulp-less'),
     jslint = require('gulp-jshint'),
     run = require('gulp-run'),
-    header = require('gulp-header'),
     footer = require('gulp-footer'),
     //The order is important, so we don't do wildcard
     sources = require(__dirname + '/res/filelist.json'),
@@ -82,8 +81,6 @@ gulp.task('complete', ['default', 'cache-thumbnails', 'bundled-modules', 'with-a
     dest + '/' + name + '.advanced.js'
   ])
   .pipe(concat(name + '.complete.js'))
-    .pipe(header('import Highcharts from \'highcharts\';\n'))
-    .pipe(header('import \'./' + name + '.css\';\n'))
     .pipe(footer('export default highed;'))
   .pipe(gulp.dest(dest));
 });
