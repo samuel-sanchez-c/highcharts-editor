@@ -10,5 +10,5 @@ Changes made from original:
 To deploy:
 
 * npm install
-* gulp all
+* gulp with-advanced
 * git push

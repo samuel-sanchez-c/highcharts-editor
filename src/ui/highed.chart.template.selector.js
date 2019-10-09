@@ -64,7 +64,7 @@ highed.ChartTemplateSelector = function(parent, chartPreview) {
       return;
     }
 
-    btn = sampleBtn = highed.dom.cr('div', 'highed-ok-button', dset.title);
+    btn = highed.dom.cr('div', 'highed-ok-button', dset.title);
 
     highed.dom.on(btn, 'click', function() {
       if (
