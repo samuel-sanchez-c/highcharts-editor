@@ -571,7 +571,7 @@ var highed = {
   /** Parse CSV Data
      * @namespace highed
      * @param {string} - inData
-     * @return {string} - delimiter 
+     * @return {string} - delimiter
      */
 
   parseCSV: function(inData, delimiter) {
@@ -914,7 +914,10 @@ var highed = {
 
     if (includedScripts[what]) {
       highed.log(3, 'script already included, skipping:', what);
-      return fn();
+      if (fn)
+        return fn();
+
+      return;
     }
 
     highed.log(3, 'including script', what);

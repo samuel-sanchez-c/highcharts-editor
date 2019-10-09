@@ -6,6 +6,8 @@ Changes made from original:
 * package.json: Change some package versions, remove unnecessary, add highcharts, gulp-footer
 * src/ui/highed.chartpreview.js: comment 198-201 check for highcharts on window object 
 * src/ui/highed.chart.template.selector.js: change 67, implicitly declared variable (x = y = 3)
+* src/core-ui/highed.datatable.js remove parseCSV function (duplicate)
+* src/core/highcharts-edito.js:917 check if fn is defined before calling
 
 To deploy:
 
