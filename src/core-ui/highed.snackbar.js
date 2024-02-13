@@ -38,6 +38,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     callback = false;
 
   highed.ready(function() {
+    highed.dom.style(container, {
+      display: "none"
+    });
     highed.dom.ap(
       document.body,
       highed.dom.ap(container, title, action, closeNode)

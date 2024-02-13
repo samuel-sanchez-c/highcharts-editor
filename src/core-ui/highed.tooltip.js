@@ -32,6 +32,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   );
 
   highed.ready(function() {
+    highed.dom.style(container, {
+      display: "none"
+    });
     highed.dom.ap(document.body, container);
   });
 

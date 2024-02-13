@@ -38,10 +38,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
   //Attach the container to the document when the document is ready
   highed.ready(function() {
-    highed.dom.ap(document.body, container);
     highed.dom.style(container, {
       display: "none"
     });
+    highed.dom.ap(document.body, container);
   });
 
   function updatePickerBackground(current) {

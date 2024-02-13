@@ -141,6 +141,9 @@ highed.OverlayModal = function(contents, attributes) {
   ///////////////////////////////////////////////////////////////////////////
 
   highed.ready(function() {
+    highed.dom.style(container, {
+      display: "none"
+    });
     highed.dom.ap(document.body, container);
   });
 

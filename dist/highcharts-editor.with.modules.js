@@ -3001,6 +3001,9 @@ highed.OverlayModal = function(contents, attributes) {
   ///////////////////////////////////////////////////////////////////////////
 
   highed.ready(function() {
+    highed.dom.style(container, {
+      display: "none"
+    });
     highed.dom.ap(document.body, container);
   });
 
@@ -4779,9 +4782,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     closeBtn = highed.dom.cr('div', 'highed-ok-button', 'Close'),
     ctx = canvas.getContext('2d'),
     manualInput = highed.dom.cr('input', 'manual');
+    manualInput.setAttribute("aria-hidden", "true");
 
   //Attach the container to the document when the document is ready
   highed.ready(function() {
+    highed.dom.style(container, {
+      display: "none"
+    });
     highed.dom.ap(document.body, container);
   });
 
@@ -5642,6 +5649,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   );
 
   highed.ready(function() {
+    highed.dom.style(container, {
+      display: "none"
+    });
     highed.dom.ap(document.body, container);
   });
 
@@ -6247,6 +6257,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     callback = false;
 
   highed.ready(function() {
+    highed.dom.style(container, {
+      display: "none"
+    });
     highed.dom.ap(
       document.body,
       highed.dom.ap(container, title, action, closeNode)

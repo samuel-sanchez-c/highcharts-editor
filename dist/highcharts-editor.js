@@ -3001,6 +3001,9 @@ highed.OverlayModal = function(contents, attributes) {
   ///////////////////////////////////////////////////////////////////////////
 
   highed.ready(function() {
+    highed.dom.style(container, {
+      display: "none"
+    });
     highed.dom.ap(document.body, container);
   });
 
@@ -4783,10 +4786,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
   //Attach the container to the document when the document is ready
   highed.ready(function() {
-    highed.dom.ap(document.body, container);
     highed.dom.style(container, {
       display: "none"
     });
+    highed.dom.ap(document.body, container);
   });
 
   function updatePickerBackground(current) {
@@ -5646,6 +5649,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   );
 
   highed.ready(function() {
+    highed.dom.style(container, {
+      display: "none"
+    });
     highed.dom.ap(document.body, container);
   });
 
@@ -6251,6 +6257,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     callback = false;
 
   highed.ready(function() {
+    highed.dom.style(container, {
+      display: "none"
+    });
     highed.dom.ap(
       document.body,
       highed.dom.ap(container, title, action, closeNode)
