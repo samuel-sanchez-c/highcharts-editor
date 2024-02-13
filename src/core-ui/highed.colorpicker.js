@@ -34,10 +34,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     closeBtn = highed.dom.cr('div', 'highed-ok-button', 'Close'),
     ctx = canvas.getContext('2d'),
     manualInput = highed.dom.cr('input', 'manual');
+    manualInput.setAttribute("aria-hidden", "true");
 
   //Attach the container to the document when the document is ready
   highed.ready(function() {
     highed.dom.ap(document.body, container);
+    highed.dom.style(container, {
+      display: "none"
+    });
   });
 
   function updatePickerBackground(current) {
