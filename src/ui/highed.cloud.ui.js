@@ -79,7 +79,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
   highed.dom.ap(
     saveNewModal.body,
-    highed.dom.cr('h2', 'highed-titlebar', 'Save to Cloud'),
+    highed.dom.cr('span', 'highed-titlebar', 'Save to Cloud'),
     highed.dom.cr('div', '', 'Team'),
     saveNewTeamsContainer,
     highed.dom.cr('br'),
@@ -151,7 +151,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   highed.dom.ap(
     modal.body,
     highed.dom.cr(
-      'h2',
+      'span',
       'highed-titlebar',
       'Load project from Highcharts Cloud'
     ),
