@@ -11144,7 +11144,6 @@ highed.ChartTemplateSelector = function(parent, chartPreview) {
           id: masterID + key + t.title,
           node: node
         };
-        console.log(t, selected);
         // If this is a map, we need to include the map collection
         if (t.constructor === 'Map') {
           var loadedSeries = 0;
@@ -15970,7 +15969,6 @@ highed.DrawerEditor = function(parent, options) {
   });
 
   templates.on('Select', function(template) {
-    console.log(template);
     chartPreview.loadTemplate(template);
   });
 
@@ -32688,7 +32686,6 @@ highed.DrawerEditor = function(parent, options) {
   });
 
   templates.on('Select', function(template) {
-    console.log(template);
     chartPreview.loadTemplate(template);
   });
 
