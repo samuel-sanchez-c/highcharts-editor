@@ -15262,6 +15262,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     });
   }
 
+  highed.dom.style(mainContainer, { display: 'none' });
+
   highed.dom.ap(
     modal.body,
     highed.dom.cr(
@@ -15967,6 +15969,7 @@ highed.DrawerEditor = function(parent, options) {
   });
 
   templates.on('Select', function(template) {
+    console.log(template);
     chartPreview.loadTemplate(template);
   });
 
