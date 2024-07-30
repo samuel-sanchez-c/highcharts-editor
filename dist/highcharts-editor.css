@@ -756,6 +756,9 @@
   -moz-box-sizing: border-box !important;
   -webkit-box-sizing: border-box !important;
 }
+.highed-customizer-table-help {
+  width: 10px;
+}
 .highed-customize-type {
   padding: 2px 4px;
   margin-left: 5px;

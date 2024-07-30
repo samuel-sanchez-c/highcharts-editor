@@ -5681,6 +5681,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
     highed.dom.style(container, {
       opacity: 1,
+      display: 'inline',
       'pointer-events': 'auto',
       left: x + 'px',
       top: y + 'px',
@@ -11144,6 +11145,7 @@ highed.ChartTemplateSelector = function(parent, chartPreview) {
           id: masterID + key + t.title,
           node: node
         };
+
         // If this is a map, we need to include the map collection
         if (t.constructor === 'Map') {
           var loadedSeries = 0;
@@ -21535,7 +21537,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
      *    > newColor {string} - the color selected by the user
      */
   highed.pickColor = function(x, y, current, fn) {
-      highed.dom.style(container, {display: "block"});
+    highed.dom.style(container, {display: "block"});
     var windowSize = highed.dom.size(document.body),
       containerSize = highed.dom.size(container),
       pickerSize = highed.dom.size(canvas),
@@ -22397,6 +22399,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
     highed.dom.style(container, {
       opacity: 1,
+      display: 'inline',
       'pointer-events': 'auto',
       left: x + 'px',
       top: y + 'px',

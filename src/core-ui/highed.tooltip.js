@@ -63,6 +63,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
     highed.dom.style(container, {
       opacity: 1,
+      display: 'inline',
       'pointer-events': 'auto',
       left: x + 'px',
       top: y + 'px',
