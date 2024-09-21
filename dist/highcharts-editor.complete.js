@@ -1298,6 +1298,10 @@ highed.installLanguage({
       "option.tooltip.series.marker.enabled": "Enable or disable the point marker. If <code>null</code>, the markers are hidden when the data is dense, and shown for more widespread data points.",
       "option.text.series.marker.symbol": "Marker symbol",
       "option.tooltip.series.marker.symbol": "<p>A predefined shape or symbol for the marker. When null, the symbol is pulled from options.symbols. Other possible values are \"circle\", \"square\", \"diamond\", \"triangle\" and \"triangle-down\".</p>\r\n\r\n<p>Additionally, the URL to a graphic can be given on this form:  \"url(graphic.png)\". Note that for the image to be applied to exported charts, its URL needs to be accessible by the export server.</p>\r\n\r\n<p>Custom callbacks for symbol path generation can also be added to <code>Highcharts.SVGRenderer.prototype.symbols</code>. The callback is then used by its method name, as shown in the demo.</p>",
+      'option.text.series.pattern': 'Pattern',
+      'option.tooltip.series.pattern': 'Pattern fill for area',
+      'option.text.series.fill': 'Fill color',
+      'option.tooltip.series.fill': 'The color for the pattern chosen',
       "option.text.plotOptions.series.dataLabels.enabled": "Enable data labels for all series",
       "option.tooltip.plotOptions.series.dataLabels.enabled": "Show small labels next to each data value (point, column, pie slice etc)",
       "option.text.plotOptions.series.dataLabels.style": "Text style",
@@ -10092,8 +10096,36 @@ highed.meta.optionsExtended = {
               'areaspline'
             ],
             subTypeDefaults: {}
-          }
+          },
 
+          { 
+            id: 'series--fillColor-pattern-path-d',
+            pid: 'series.pattern',
+            dataType: 'string',
+            context: 'General',
+            defaults: 'null',
+            parent: 'series<area>',
+            subType: ['area'],subTypeDefaults: {},
+            values: [
+              { id: "M 0 0 L 10 0 M 0 1 L 10 1 M 0 2 L 10 2", title: "Horizontal" },
+              { id: "M 0 0 L 0 10 M 1 0 L 1 10 M 2 0 L 2 10", title: "Vertical" },
+              { id: "M 0 0 L 10 10 M -1 9 L 1 11 M 9 -1 L 11 1", title: "Diagonal (Top-Left to Bottom-Right)" },
+              { id: "M 10 0 L 0 10 M 0 0 L 1 1 M 9 9 L 11 11", title: "Diagonal (Top-Right to Bottom-Left)" },
+              { id: "M 0 5 L 10 5 M 5 0 L 5 10", title: "Grid" },
+              { id: "M 0 0 L 10 10 M 10 0 L 0 10", title: "Diagonal Grid" },
+            ],
+            width: 50
+          },
+          { 
+            id: 'series--fillColor-pattern-color',
+            pid: 'series.fill',
+            dataType: 'color',
+            context: 'General',
+            defaults: 'null',
+            parent: 'series<area>',
+            subType: ['area'],subTypeDefaults: {},
+            width: 25
+          },
           // {
           //   id: 'series-label--enabled',
           //   pid: 'series.label.enabled',
@@ -18016,6 +18048,10 @@ highed.installLanguage({
       "option.tooltip.series.marker.enabled": "Enable or disable the point marker. If <code>null</code>, the markers are hidden when the data is dense, and shown for more widespread data points.",
       "option.text.series.marker.symbol": "Marker symbol",
       "option.tooltip.series.marker.symbol": "<p>A predefined shape or symbol for the marker. When null, the symbol is pulled from options.symbols. Other possible values are \"circle\", \"square\", \"diamond\", \"triangle\" and \"triangle-down\".</p>\r\n\r\n<p>Additionally, the URL to a graphic can be given on this form:  \"url(graphic.png)\". Note that for the image to be applied to exported charts, its URL needs to be accessible by the export server.</p>\r\n\r\n<p>Custom callbacks for symbol path generation can also be added to <code>Highcharts.SVGRenderer.prototype.symbols</code>. The callback is then used by its method name, as shown in the demo.</p>",
+      'option.text.series.pattern': 'Pattern',
+      'option.tooltip.series.pattern': 'Pattern fill for area',
+      'option.text.series.fill': 'Fill color',
+      'option.tooltip.series.fill': 'The color for the pattern chosen',
       "option.text.plotOptions.series.dataLabels.enabled": "Enable data labels for all series",
       "option.tooltip.plotOptions.series.dataLabels.enabled": "Show small labels next to each data value (point, column, pie slice etc)",
       "option.text.plotOptions.series.dataLabels.style": "Text style",
@@ -26810,8 +26846,36 @@ highed.meta.optionsExtended = {
               'areaspline'
             ],
             subTypeDefaults: {}
-          }
+          },
 
+          { 
+            id: 'series--fillColor-pattern-path-d',
+            pid: 'series.pattern',
+            dataType: 'string',
+            context: 'General',
+            defaults: 'null',
+            parent: 'series<area>',
+            subType: ['area'],subTypeDefaults: {},
+            values: [
+              { id: "M 0 0 L 10 0 M 0 1 L 10 1 M 0 2 L 10 2", title: "Horizontal" },
+              { id: "M 0 0 L 0 10 M 1 0 L 1 10 M 2 0 L 2 10", title: "Vertical" },
+              { id: "M 0 0 L 10 10 M -1 9 L 1 11 M 9 -1 L 11 1", title: "Diagonal (Top-Left to Bottom-Right)" },
+              { id: "M 10 0 L 0 10 M 0 0 L 1 1 M 9 9 L 11 11", title: "Diagonal (Top-Right to Bottom-Left)" },
+              { id: "M 0 5 L 10 5 M 5 0 L 5 10", title: "Grid" },
+              { id: "M 0 0 L 10 10 M 10 0 L 0 10", title: "Diagonal Grid" },
+            ],
+            width: 50
+          },
+          { 
+            id: 'series--fillColor-pattern-color',
+            pid: 'series.fill',
+            dataType: 'color',
+            context: 'General',
+            defaults: 'null',
+            parent: 'series<area>',
+            subType: ['area'],subTypeDefaults: {},
+            width: 25
+          },
           // {
           //   id: 'series-label--enabled',
           //   pid: 'series.label.enabled',

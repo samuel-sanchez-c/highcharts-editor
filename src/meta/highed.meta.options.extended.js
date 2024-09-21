@@ -590,8 +590,36 @@ highed.meta.optionsExtended = {
               'areaspline'
             ],
             subTypeDefaults: {}
-          }
+          },
 
+          { 
+            id: 'series--fillColor-pattern-path-d',
+            pid: 'series.pattern',
+            dataType: 'string',
+            context: 'General',
+            defaults: 'null',
+            parent: 'series<area>',
+            subType: ['area'],subTypeDefaults: {},
+            values: [
+              { id: "M 0 0 L 10 0 M 0 1 L 10 1 M 0 2 L 10 2", title: "Horizontal" },
+              { id: "M 0 0 L 0 10 M 1 0 L 1 10 M 2 0 L 2 10", title: "Vertical" },
+              { id: "M 0 0 L 10 10 M -1 9 L 1 11 M 9 -1 L 11 1", title: "Diagonal (Top-Left to Bottom-Right)" },
+              { id: "M 10 0 L 0 10 M 0 0 L 1 1 M 9 9 L 11 11", title: "Diagonal (Top-Right to Bottom-Left)" },
+              { id: "M 0 5 L 10 5 M 5 0 L 5 10", title: "Grid" },
+              { id: "M 0 0 L 10 10 M 10 0 L 0 10", title: "Diagonal Grid" },
+            ],
+            width: 50
+          },
+          { 
+            id: 'series--fillColor-pattern-color',
+            pid: 'series.fill',
+            dataType: 'color',
+            context: 'General',
+            defaults: 'null',
+            parent: 'series<area>',
+            subType: ['area'],subTypeDefaults: {},
+            width: 25
+          },
           // {
           //   id: 'series-label--enabled',
           //   pid: 'series.label.enabled',
