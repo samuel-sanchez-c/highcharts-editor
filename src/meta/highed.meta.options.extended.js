@@ -601,6 +601,7 @@ highed.meta.optionsExtended = {
             parent: 'series<area>',
             subType: ['area'],subTypeDefaults: {},
             values: [
+              { id: "M30 0 L30 29 L1 29 L1 0 Z M29 0 L29 1 L1 1 L1 0 Z M28 0 L28 2 L0 2 L0 0 Z M27 0 L27 3 L0 3 L0 0 Z M26 0 L26 4 L0 4 L0 0 Z M25 0 L25 5 L0 5 L0 0 Z M24 0 L24 6 L0 6 L0 0 Z M23 0 L23 7 L0 7 L0 0 Z M22 0 L22 8 L0 8 L0 0 Z M21 0 L21 9 L0 9 L0 0 Z M20 0 L20 10 L0 10 L0 0 Z M19 0 L19 11 L0 11 L0 0 Z M18 0 L18 12 L0 12 L0 0 Z M17 0 L17 13 L0 13 L0 0 Z M16 0 L16 14 L0 14 L0 0 Z M15 0 L15 15 L0 15 L0 0 Z M14 0 L14 16 L0 16 L0 0 Z M13 0 L13 17 L0 17 L0 0 Z M12 0 L12 18 L0 18 L0 0 Z M11 0 L11 19 L0 19 L0 0 Z M10 0 L10 20 L0 20 L0 0 Z M9 0 L9 21 L0 21 L0 0 Z M8 0 L8 22 L0 22 L0 0 Z M7 0 L7 23 L0 23 L0 0 Z M6 0 L6 24 L0 24 L0 0 Z M5 0 L5 25 L0 25 L0 0 Z M4 0 L4 26 L0 26 L0 0 Z M3 0 L3 27 L0 27 L0 0 Z M2 0 L2 28 L0 28 L0 0 Z M1 0 L1 29 L0 29 L0 0 Z", title: "none" },
               { id: "M 0 0 L 10 0 M 0 1 L 10 1 M 0 2 L 10 2", title: "Horizontal" },
               { id: "M 0 0 L 0 10 M 1 0 L 1 10 M 2 0 L 2 10", title: "Vertical" },
               { id: "M 0 0 L 10 10 M -1 9 L 1 11 M 9 -1 L 11 1", title: "Diagonal (Top-Left to Bottom-Right)" },
@@ -620,6 +621,14 @@ highed.meta.optionsExtended = {
             subType: ['area'],subTypeDefaults: {},
             width: 25
           },
+        //   { 
+        //     id: 'series--dataSorting-enabled',
+        //     pid: 'series.fill',
+        //     dataType: 'boolean',
+        //     context: 'General',
+        //     parent: 'series<area>',
+        //     defaults: false
+        //   },
           // {
           //   id: 'series-label--enabled',
           //   pid: 'series.label.enabled',

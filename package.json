@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint src/*",
-    "precommit": "gulp with-advanced && git add dist/*"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "src/*.js": [
