@@ -199,6 +199,9 @@ highed.installLanguage({
     'option.tooltip.series.pattern': 'Pattern fill for area',
     'option.text.series.fill': 'Fill color',
     'option.tooltip.series.fill': 'The color for the pattern chosen',
+    'option.text.series.datasorting': 'Sort data',
+    'option.tooltip.series.datasorting':
+      'Enable the sorting of data when available',
     'option.text.plotOptions.series.dataLabels.enabled':
       'Enable data labels for all series',
     'option.tooltip.plotOptions.series.dataLabels.enabled':

@@ -621,14 +621,43 @@ highed.meta.optionsExtended = {
             subType: ['area'],subTypeDefaults: {},
             width: 25
           },
-        //   { 
-        //     id: 'series--dataSorting-enabled',
-        //     pid: 'series.fill',
-        //     dataType: 'boolean',
-        //     context: 'General',
-        //     parent: 'series<area>',
-        //     defaults: false
-        //   },
+          { 
+            id: 'series--dataSorting-enabled',
+            pid: 'series.datasorting',
+            dataType: 'boolean',
+            context: 'General',
+            defaults: false,
+            subType: [
+                'gauge',
+                'arearange',
+                'areasplinerange',
+                'line',
+                'errorbar',
+                'boxplot',
+                'areaspline',
+                'spline',
+                'bar',
+                'scatter',
+                'polygon',
+                'bubble',
+                'area',
+                'column'
+              ],
+              subTypeDefaults: {
+                arearange: 'null',
+                areasplinerange: 'null',
+                line: 'null',
+                errorbar: 'null',
+                boxplot: 'null',
+                areaspline: 'null',
+                spline: 'null',
+                bar: 'null',
+                scatter: 'null',
+                polygon: 'null',
+                bubble: 'null',
+                area: 'null',
+                column: 'null'
+              }          },
           // {
           //   id: 'series-label--enabled',
           //   pid: 'series.label.enabled',
