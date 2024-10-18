@@ -1334,7 +1334,14 @@ highed.installLanguage({
     'option.text.series.fill': 'Fill color',
     'option.tooltip.series.fill': 'The color for the pattern chosen',
     'option.text.series.datasorting': 'Sort data',
-    'option.tooltip.series.datasorting': 'Enable the sorting of data when available',
+    'option.tooltip.series.datasorting':
+      'Enable the sorting of data when available',
+    'option.text.plotOptions.dataLabels.alignment': 'Align legends',
+    'option.tooltip.plotOptions.dataLabels.alignment': 'Align the legends to connectors or plot edges',
+    'option.text.plotOptions.dataLabels.connectorShape': 'Connector shape',
+    'option.tooltip.plotOptions.dataLabels.connectorShape': 'Specifies the method that is used to generate the connector path.',
+    'option.text.plotOptions.dataLabels.crookDistance': 'Crook distance',
+    'option.tooltip.plotOptions.dataLabels.crookDistance': 'It defines how far from the vertical plot edge the coonnector path should be crooked.',
     'option.text.plotOptions.series.dataLabels.enabled':
       'Enable data labels for all series',
     'option.tooltip.plotOptions.series.dataLabels.enabled':
@@ -10200,36 +10207,37 @@ highed.meta.optionsExtended = {
             context: 'General',
             defaults: false,
             subType: [
-                'gauge',
-                'arearange',
-                'areasplinerange',
-                'line',
-                'errorbar',
-                'boxplot',
-                'areaspline',
-                'spline',
-                'bar',
-                'scatter',
-                'polygon',
-                'bubble',
-                'area',
-                'column'
-              ],
-              subTypeDefaults: {
-                arearange: 'null',
-                areasplinerange: 'null',
-                line: 'null',
-                errorbar: 'null',
-                boxplot: 'null',
-                areaspline: 'null',
-                spline: 'null',
-                bar: 'null',
-                scatter: 'null',
-                polygon: 'null',
-                bubble: 'null',
-                area: 'null',
-                column: 'null'
-              }          },
+              'gauge',
+              'arearange',
+              'areasplinerange',
+              'line',
+              'errorbar',
+              'boxplot',
+              'areaspline',
+              'spline',
+              'bar',
+              'scatter',
+              'polygon',
+              'bubble',
+              'area',
+              'column'
+            ],
+            subTypeDefaults: {
+              arearange: 'null',
+              areasplinerange: 'null',
+              line: 'null',
+              errorbar: 'null',
+              boxplot: 'null',
+              areaspline: 'null',
+              spline: 'null',
+              bar: 'null',
+              scatter: 'null',
+              polygon: 'null',
+              bubble: 'null',
+              area: 'null',
+              column: 'null'
+            }
+        },
           // {
           //   id: 'series-label--enabled',
           //   pid: 'series.label.enabled',
@@ -10276,7 +10284,31 @@ highed.meta.optionsExtended = {
             defaults:
               '{"color": "contrast", "fontSize": "11px", "fontWeight": "bold", "textOutline": "1px 1px contrast" }',
             parent: 'plotOptions-series-dataLabels'
-          }
+          },
+          {
+            id: 'plotOptions-pie--dataLabels-alignTo',
+            pid: 'plotOptions.dataLabels.alignment',
+            dataType: 'string',
+            context: 'General',
+            values: ['connectors', 'plotEdges'],
+            defaults: false,
+          },
+          {
+            id: 'plotOptions-pie--dataLabels-connectorShape',
+            pid: 'plotOptions.dataLabels.connectorShape',
+            dataType: 'string',
+            context: 'General',
+            values: ['straight', 'fixedOffset', 'crookedLine'],
+            defaults: false,
+          },
+          {
+            id: 'plotOptions-pie--dataLabels-crookDistance',
+            pid: 'plotOptions.dataLabels.crookDistance',
+            dataType: 'string',
+            context: 'General',
+            values: ['20%', '40%', '60%', '80%', '100%',],
+            defaults: false,
+          },
         ]
       }
     ],

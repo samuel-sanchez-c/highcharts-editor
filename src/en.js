@@ -202,6 +202,15 @@ highed.installLanguage({
     'option.text.series.datasorting': 'Sort data',
     'option.tooltip.series.datasorting':
       'Enable the sorting of data when available',
+    'option.text.plotOptions.dataLabels.alignment': 'Align legends',
+    'option.tooltip.plotOptions.dataLabels.alignment':
+      'Align the legends to connectors or plot edges',
+    'option.text.plotOptions.dataLabels.connectorShape': 'Connector shape',
+    'option.tooltip.plotOptions.dataLabels.connectorShape':
+      'Specifies the method that is used to generate the connector path.',
+    'option.text.plotOptions.dataLabels.crookDistance': 'Crook distance',
+    'option.tooltip.plotOptions.dataLabels.crookDistance':
+      'It defines how far from the vertical plot edge the coonnector path should be crooked.',
     'option.text.plotOptions.series.dataLabels.enabled':
       'Enable data labels for all series',
     'option.tooltip.plotOptions.series.dataLabels.enabled':
