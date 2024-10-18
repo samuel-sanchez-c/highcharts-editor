@@ -1143,311 +1143,309 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 //Install "en" translations
 highed.installLanguage({
-  language: 'en',
-  entries: {
-    confirmNewChart:
-      'Are you sure you want to abandon the current chart and start over?',
-    previewChart: 'Preview Chart',
-    newChart: 'New Chart',
-    saveProject: 'Save Project',
-    loadProject: 'Load Project',
-    exportPNG: 'Export as PNG',
-    exportJPEG: 'Export as JPEG',
-    exportSVG: 'Export as SVG',
-    exportPDF: 'Export as PDF',
-    loadCloud: 'Load From Cloud',
-    saveCloud: 'Save To Cloud',
-    help: 'Help',
-    licenseInfo: 'License Information',
-    stepDone: 'Done',
-    stepStart: 'Start',
-    stepImport: 'Import',
-    stepTemplates: 'Templates',
-    stepCustomize: 'Customize',
-    stepExport: 'Export',
-    stepData: 'Data',
-    doneCaption: 'Close & Generate Chart',
-    dgDeleteRow: 'Really delete the selected rows?',
-    dgWithSelected: 'With Selection:',
-    dgImportBtn: 'IMPORT',
-    dgExportBtn: 'EXPORT DATA',
-    dgNewBtn: 'CLEAR DATA',
-    dgAddRow: 'ADD ROW',
-    dgDataImported: 'Data imported',
-    dgDataImporting: 'Importing data',
-    dgNewCol: 'New Column',
-    dgSortAsc: 'Sort Ascending',
-    dgSortDec: 'Sort Descending',
-    dgSortAscMonth: 'Sort as Month Names Ascending',
-    dgSortDecMonth: 'Sort as Month Names Decending',
-    dgDelCol: 'Delete Column',
-    dgDelColConfirm: 'Really delete the column?',
-    dgInsColBefore: 'Insert Column Before',
-    dgInsColAfter: 'Insert Column After',
-    customizeSimple: 'SIMPLE',
-    customizeAdvanced: 'ADVANCED',
-    customizeCustomCode: 'CUSTOM CODE',
-    customizePreview: 'PREVIEW OPTIONS',
-    'option.cat.title': 'Titles',
-    'option.subcat.titles': 'Main titles',
-    'option.cat.general': 'General',
-    'option.subcat.size': 'Chart size',
-    'option.subcat.interaction': 'Chart Interaction',
-    'option.cat.appearance': 'Appearance',
-    'option.subcat.fonts': 'Fonts',
-    'option.subcat.titlestyle': 'Title Style',
-    'option.subcat.seriescolors': 'Series Colors',
-    'option.subcat.chartarea': 'Chart Area',
-    'option.subcat.plotarea': 'Plot Area',
-    'option.cat.axes': 'Axes',
-    'option.subcat.axessetup': 'Axes Setup',
-    'option.subcat.xaxis': 'X-Axis',
-    'option.subcat.yaxis': 'Y-Axis',
-    'option.cat.series': 'Data Series',
-    'option.cat.labels': 'Value Labels',
-    'option.subcat.labels': 'Value Labels',
-    'option.cat.legend': 'Legend',
-    'option.subcat.general': 'General',
-    'option.subcat.placement': 'Placement',
-    'option.subcat.legendappearance': 'Appearance',
-    'option.cat.tooltip': 'Tooltip',
-    'option.subcat.colorborder': 'Color and Border',
-    'option.cat.exporting': 'Exporting',
-    'option.cat.localization': 'Localization',
-    'option.subcat.numberformat': 'Number formatting',
-    'option.subcat.exportbutton': 'Exporting button and menu',
-    'option.subcat.zoombutton': 'Zoom button',
-    'option.cat.credits': 'Credits',
-    'option.series.label': 'Series Labels',
-    'option.text.series.label.enabled': 'Series label',
-    'option.tooltip.series.label.enabled':
-      'Enable or disable the series label. Series labels are placed as close to the series as possible in a natural way, seeking to avoid other series. The goal of this feature is to make the chart more easily readable, like if a human designer placed the labels in the optimal position.',
-    'option.text.series.label.style': 'Series label style',
-    'options.tooltip.series.label.style': '',
-    'option.text.title.text': 'Chart title',
-    'option.tooltip.title.text': 'The main chart title.',
-    'option.text.subtitle.text': 'Chart subtitle',
-    'option.tooltip.subtitle.text':
-      "The chart's subtitle, normally displayed with smaller fonts below the main title.",
-    'option.text.yAxis.title.text': 'Y axis title',
-    'option.tooltip.yAxis.title.text':
-      'The Y axis title, normally displayed vertically along the Y axis.',
-    'option.text.chart.width': 'Chart width',
-    'option.tooltip.chart.width':
-      'An explicit width for the chart. By default (when <code>null</code>) the width is calculated from the offset width of the containing element.',
-    'option.text.chart.height': 'Chart height',
-    'option.tooltip.chart.height':
-      "An explicit height for the chart. By default (when <code>null</code>) the height is calculated from the offset height of the containing element, or 400 pixels if the containing element's height is 0.",
-    'option.text.chart.zoomType': 'Allow zooming',
-    'option.tooltip.chart.zoomType':
-      'Decides in what dimensions the user can zoom by dragging the mouse. Can be one of <code>x</code>, <code>y</code> or <code>xy</code>.',
-    'option.text.chart.polar': 'Polar (radar) projection',
-    'option.tooltip.chart.polar':
-      'When true, cartesian charts like line, spline, area and column are transformed into the polar coordinate system. Requires <code>highcharts-more.js</code>.',
-    'option.text.chart.style': 'Font family',
-    'option.tooltip.chart.style': 'The font to use throughout the chart',
-    'option.text.title.style': 'Main title style',
-    'option.tooltip.title.style': 'Styling for the main chart title',
-    'option.text.subtitle.style': 'Subtitle style',
-    'option.tooltip.subtitle.style':
-      "Styling for the chart's subtitle, normally displayed with smaller fonts below the main title",
-    'option.text.colors': 'Colors',
-    'option.tooltip.colors':
-      'Default colors for the data series, or for individual points in a pie series or a column series with individual colors. Colors will be picked in succession. If a color is explicitly set for each series in the <em>Data series</em> view, that color will take precedence.',
-    'option.text.chart.backgroundColor': 'Background color',
-    'option.tooltip.chart.backgroundColor':
-      'Background color for the full chart area',
-    'option.text.chart.borderWidth': 'Border width',
-    'option.tooltip.chart.borderWidth':
-      'The pixel width of the outer chart border.',
-    'option.text.chart.borderRadius': 'Border corner radius',
-    'option.tooltip.chart.borderRadius':
-      'The corner radius of the outer chart border.',
-    'option.text.chart.borderColor': 'Border color',
-    'option.tooltip.chart.borderColor': 'The color of the outer chart border.',
-    'option.text.chart.plotBackgroundColor': 'Background color',
-    'option.tooltip.chart.plotBackgroundColor':
-      'Background color for the plot area, the area inside the axes',
-    'option.text.chart.plotBackgroundImage': 'Background image URL',
-    'option.tooltip.chart.plotBackgroundImage':
-      'The online URL for an image to use as the plot area background',
-    'option.text.chart.plotBorderWidth': 'Border width',
-    'option.tooltip.chart.plotBorderWidth':
-      'The pixel width of the plot area border.',
-    'option.text.chart.plotBorderColor': 'Border color',
-    'option.tooltip.chart.plotBorderColor':
-      'The color of the inner chart or plot area border.',
-    'option.text.chart.inverted': 'Inverted axes',
-    'option.tooltip.chart.inverted':
-      '<p>Whether to invert the axes so that the x axis is vertical and y axis is horizontal. When true, the x axis is <a href="#xAxis.reversed">reversed</a> by default. If a bar series is present in the chart, it will be inverted automatically.</p>\r\n\r\n<p>Inverting the chart doesn\'t have an effect if there are no cartesian series in the chart, or if the chart is <a href="#chart.polar">polar</a>.</p>',
-    'option.text.xAxis.title.style': 'X axis title',
-    'option.tooltip.xAxis.title.style': 'Styling and text for the X axis title',
-    'option.text.xAxis.title.text': 'Text',
-    'option.tooltip.xAxis.title.text':
-      'The actual text of the axis title. It can contain basic HTML text markup like &lt;b&gt;, &lt;i&gt; and spans with style.',
-    'option.text.xAxis.type': 'Type',
-    'option.tooltip.xAxis.type': 'The type of axis',
-    'option.text.xAxis.opposite': 'Opposite side of chart',
-    'option.tooltip.xAxis.opposite':
-      'Whether to display the axis on the opposite side of the normal. The normal is on the left side for vertical axes and bottom for horizontal, so the opposite sides will be right and top respectively. This is typically used with dual or multiple axes.',
-    'option.text.xAxis.reversed': 'Reversed direction',
-    'option.tooltip.xAxis.reversed':
-      'Whether to reverse the axis so that the highest number is closest to the origin. If the chart is inverted, the x axis is reversed by default.',
-    'option.text.xAxis.labels.format': 'Axis labels format',
-    'option.tooltip.xAxis.labels.format':
-      '<p>A format string for the axis labels. The value is available through a variable <code>{value}</code>.</p><p><b>Units</b> can be added for example like <code>{value} USD</code>.</p><p><b>Formatting</b> can be added after a colon inside the variable, for example <code>USD {value:.2f}</code> to display two decimals, or <code>{value:%Y-%m-%d}</code> for a certain time format.',
-    'option.text.yAxis.title.style': 'Y axis title style',
-    'option.tooltip.yAxis.title.style': 'Styling and text for the X axis title',
-    'option.text.yAxis.type': 'Type',
-    'option.tooltip.yAxis.type': 'The type of axis',
-    'option.text.yAxis.opposite': 'Opposite side of chart',
-    'option.tooltip.yAxis.opposite':
-      'Whether to display the axis on the opposite side of the normal. The normal is on the left side for vertical axes and bottom for horizontal, so the opposite sides will be right and top respectively. This is typically used with dual or multiple axes.',
-    'option.text.yAxis.reversed': 'Reversed direction',
-    'option.tooltip.yAxis.reversed':
-      'Whether to reverse the axis so that the highest number is closest to the origin. If the chart is inverted, the x axis is reversed by default.',
-    'option.text.yAxis.labels.format': 'Axis labels format',
-    'option.tooltip.yAxis.labels.format':
-      '<p>A format string for the axis labels. The value is available through a variable <code>{value}</code>.</p><p><b>Units</b> can be added for example like <code>{value} USD</code>.</p><p><b>Formatting</b> can be added after a colon inside the variable, for example <code>USD {value:.2f}</code> to display two decimals, or <code>{value:%Y-%m-%d}</code> for a certain time format.',
-    'option.text.series.type': 'Series type',
-    'option.tooltip.series.type': 'The type of series',
-    'option.text.series.color': 'Color',
-    'option.tooltip.series.color':
-      'The main color of the series. If no color is given here, the color is pulled from the array of default colors as given in the "Appearance" section.',
-    'option.text.series.negativeColor': 'Negative color',
-    'option.tooltip.series.negativeColor':
-      'The negative color of the series below the threshold. Threshold is default zero, this can be changed in the advanced settings.',
-    'option.text.series.colorByPoint': 'Color by point',
-    'option.tooltip.series.colorByPoint':
-      'Use one color per point. Colors can be changed in the "Appearance" section.',
-    'option.text.series.dashStyle': 'Dash style',
-    'option.tooltip.series.dashStyle':
-      'A name for the dash style to use for the graph. Applies only to series type having a graph, like <code>line</code>, <code>spline</code>, <code>area</code> and <code>scatter</code> in  case it has a <code>lineWidth</code>. The value for the <code>dashStyle</code> include:\r\n\t\t    <ul>\r\n\t\t    \t<li>Solid</li>\r\n\t\t    \t<li>ShortDash</li>\r\n\t\t    \t<li>ShortDot</li>\r\n\t\t    \t<li>ShortDashDot</li>\r\n\t\t    \t<li>ShortDashDotDot</li>\r\n\t\t    \t<li>Dot</li>\r\n\t\t    \t<li>Dash</li>\r\n\t\t    \t<li>LongDash</li>\r\n\t\t    \t<li>DashDot</li>\r\n\t\t    \t<li>LongDashDot</li>\r\n\t\t    \t<li>LongDashDotDot</li>\r\n\t\t    </ul>',
-    'option.text.series.marker.enabled': 'Enable point markers',
-    'option.tooltip.series.marker.enabled':
-      'Enable or disable the point marker. If <code>null</code>, the markers are hidden when the data is dense, and shown for more widespread data points.',
-    'option.text.series.marker.symbol': 'Marker symbol',
-    'option.tooltip.series.marker.symbol':
-      '<p>A predefined shape or symbol for the marker. When null, the symbol is pulled from options.symbols. Other possible values are "circle", "square", "diamond", "triangle" and "triangle-down".</p>\r\n\r\n<p>Additionally, the URL to a graphic can be given on this form:  "url(graphic.png)". Note that for the image to be applied to exported charts, its URL needs to be accessible by the export server.</p>\r\n\r\n<p>Custom callbacks for symbol path generation can also be added to <code>Highcharts.SVGRenderer.prototype.symbols</code>. The callback is then used by its method name, as shown in the demo.</p>',
-    'option.text.series.pattern': 'Pattern',
-    'option.tooltip.series.pattern': 'Pattern fill for area',
-    'option.text.series.fill': 'Fill color',
-    'option.tooltip.series.fill': 'The color for the pattern chosen',
-    'option.text.series.datasorting': 'Sort data',
-    'option.tooltip.series.datasorting':
-      'Enable the sorting of data when available',
-    'option.text.plotOptions.dataLabels.alignment': 'Align legends',
-    'option.tooltip.plotOptions.dataLabels.alignment': 'Align the legends to connectors or plot edges',
-    'option.text.plotOptions.dataLabels.connectorShape': 'Connector shape',
-    'option.tooltip.plotOptions.dataLabels.connectorShape': 'Specifies the method that is used to generate the connector path.',
-    'option.text.plotOptions.dataLabels.crookDistance': 'Crook distance',
-    'option.tooltip.plotOptions.dataLabels.crookDistance': 'It defines how far from the vertical plot edge the coonnector path should be crooked.',
-    'option.text.plotOptions.series.dataLabels.enabled':
-      'Enable data labels for all series',
-    'option.tooltip.plotOptions.series.dataLabels.enabled':
-      'Show small labels next to each data value (point, column, pie slice etc)',
-    'option.text.plotOptions.series.dataLabels.style': 'Text style',
-    'option.tooltip.plotOptions.series.dataLabels.style':
-      'Styles for the label.',
-    'option.text.legend.enabled': 'Enable legend',
-    'option.tooltip.legend.enabled': 'Enable or disable the legend.',
-    'option.text.legend.layout': 'Item layout',
-    'option.tooltip.legend.layout':
-      'The layout of the legend items. Can be one of "horizontal" or "vertical".',
-    'option.text.legend.align': 'Horizontal alignment',
-    'option.tooltip.legend.align':
-      '<p>The horizontal alignment of the legend box within the chart area. Valid values are <code>left</code>, <code>center</code> and <code>right</code>.</p>\r\n\r\n<p>In the case that the legend is aligned in a corner position, the <code>layout</code> option will determine whether to place it above/below or on the side of the plot area.</p>',
-    'option.text.legend.x': 'Horizontal offset',
-    'option.tooltip.legend.x':
-      'The pixel offset of the legend relative to its alignment',
-    'option.text.legend.verticalAlign': 'Vertical alignment',
-    'option.tooltip.legend.verticalAlign':
-      '<p>The vertical alignment of the legend box. Can be one of <code>top</code>, <code>middle</code> or  <code>bottom</code>. Vertical position can be further determined by the <code>y</code> option.</p>\r\n\r\n<p>In the case that the legend is aligned in a corner position, the <code>layout</code> option will determine whether to place it above/below or on the side of the plot area.</p>',
-    'option.text.legend.y': 'Vertical offset',
-    'option.tooltip.legend.y':
-      'The pixel offset of the legend relative to its alignment',
-    'option.text.legend.floating': 'Float on top of plot area',
-    'option.tooltip.legend.floating':
-      'When the legend is floating, the plot area ignores it and is allowed to be placed below it.',
-    'option.text.legend.itemStyle': 'Text style',
-    'option.tooltip.legend.itemStyle':
-      'CSS styles for each legend item. Only a subset of CSS is supported, notably those options related to text.',
-    'option.text.legend.itemHiddenStyle': 'Text style hidden',
-    'option.tooltip.legend.itemHiddenStyle':
-      'CSS styles for each legend item when the corresponding series or point is hidden. Only a subset of CSS is supported, notably those options related to text. Properties are inherited from <code>style</code> unless overridden here.',
-    'option.text.legend.backgroundColor': 'Background color',
-    'option.tooltip.legend.backgroundColor':
-      'The background color of the legend.',
-    'option.text.legend.borderWidth': 'Border width',
-    'option.tooltip.legend.borderWidth':
-      'The width of the drawn border around the legend.',
-    'option.text.legend.borderRadius': 'Border corner radius',
-    'option.tooltip.legend.borderRadius':
-      'The border corner radius of the legend.',
-    'option.text.legend.borderColor': 'Border color',
-    'option.tooltip.legend.borderColor':
-      'The color of the drawn border around the legend.',
-    'option.text.tooltip.enabled': 'Enable tooltip',
-    'option.tooltip.tooltip.enabled':
-      'Enable or disable the tooltip. The tooltip is the information box that appears on mouse-over or touch on a point.',
-    'option.text.tooltip.shared': 'Shared between series',
-    'option.tooltip.tooltip.shared':
-      'When the tooltip is shared, the entire plot area will capture mouse movement or touch events. Tooltip texts for series types with ordered data (not pie, scatter, flags etc) will be shown in a single bubble. This is recommended for single series charts and for tablet/mobile optimized charts.',
-    'option.text.tooltip.backgroundColor': 'Background color',
-    'option.tooltip.tooltip.backgroundColor':
-      'The background color of the tooltip',
-    'option.text.tooltip.borderWidth': 'Border width',
-    'option.tooltip.tooltip.borderWidth':
-      '<p>The pixel width of the tooltip border.</p>\r\n\r\n<p>In <a href="http://www.highcharts.com/docs/chart-design-and-style/style-by-css">styled mode</a>, the stroke width is set in the <code>.highcharts-tooltip-box</code> class.</p>',
-    'option.text.tooltip.borderRadius': 'Border corner radius',
-    'option.tooltip.tooltip.borderRadius':
-      'The radius of the rounded border corners.',
-    'option.text.tooltip.borderColor': 'Border color',
-    'option.tooltip.tooltip.borderColor':
-      'The border color of the tooltip. If no color is given, the corresponding series color is used.',
-    'option.text.exporting.enabled': 'Enable exporting',
-    'option.tooltip.exporting.enabled':
-      'Enable the context button on the top right of the chart, allowing end users to download image exports.',
-    'option.text.exporting.sourceWidth': 'Exported width',
-    'option.tooltip.exporting.sourceWidth':
-      'The width of the original chart when exported. The pixel width of the exported image is then multiplied by the <em>Scaling factor</em>.',
-    'option.text.exporting.scale': 'Scaling factor',
-    'option.tooltip.exporting.scale':
-      'The export scale. Note that this is overridden if width is set.',
-    'option.text.lang.decimalPoint': 'Decimal point',
-    'option.tooltip.lang.decimalPoint':
-      'The decimal point used for all numbers',
-    'option.text.lang.thousandsSep': 'Thousands separator',
-    'option.tooltip.lang.thousandsSep':
-      'The thousands separator used for all numbers',
-    'option.text.lang.contextButtonTitle': 'Context button title',
-    'option.tooltip.lang.contextButtonTitle':
-      'Exporting module menu. The tooltip title for the context menu holding print and export menu items.',
-    'option.text.lang.printChart': 'Print chart',
-    'option.tooltip.lang.printChart':
-      'Exporting module only. The text for the menu item to print the chart.',
-    'option.text.lang.downloadPNG': 'Download PNG',
-    'option.tooltip.lang.downloadPNG':
-      'Exporting module only. The text for the PNG download menu item.',
-    'option.text.lang.downloadJPEG': 'Download JPEG',
-    'option.tooltip.lang.downloadJPEG':
-      'Exporting module only. The text for the JPEG download menu item.',
-    'option.text.lang.downloadPDF': 'Download PDF',
-    'option.tooltip.lang.downloadPDF':
-      'Exporting module only. The text for the PDF download menu item.',
-    'option.text.lang.downloadSVG': 'Download SVG',
-    'option.tooltip.lang.downloadSVG':
-      'Exporting module only. The text for the SVG download menu item.',
-    'option.text.lang.resetZoom': 'Reset zoom button',
-    'option.tooltip.lang.resetZoom':
-      'The text for the label appearing when a chart is zoomed.',
-    'option.text.credits.enabled': 'Enable credits',
-    'option.tooltip.credits.enabled': 'Whether to show the credits text',
-    'option.text.credits.text': 'Credits text',
-    'option.tooltip.credits.text': 'The text for the credits label',
-    'option.text.credits.href': 'Link',
-    'option.tooltip.credits.href': 'The URL for the credits label'
-  }
+    language: "en",
+    entries: {
+        confirmNewChart:
+            "Are you sure you want to abandon the current chart and start over?",
+        previewChart: "Preview Chart",
+        newChart: "New Chart",
+        saveProject: "Save Project",
+        loadProject: "Load Project",
+        exportPNG: "Export as PNG",
+        exportJPEG: "Export as JPEG",
+        exportSVG: "Export as SVG",
+        exportPDF: "Export as PDF",
+        loadCloud: "Load From Cloud",
+        saveCloud: "Save To Cloud",
+        help: "Help",
+        licenseInfo: "License Information",
+        stepDone: "Done",
+        stepStart: "Start",
+        stepImport: "Import",
+        stepTemplates: "Templates",
+        stepCustomize: "Customize",
+        stepExport: "Export",
+        stepData: "Data",
+        doneCaption: "Close & Generate Chart",
+        dgDeleteRow: "Really delete the selected rows?",
+        dgWithSelected: "With Selection:",
+        dgImportBtn: "IMPORT",
+        dgExportBtn: "EXPORT DATA",
+        dgNewBtn: "CLEAR DATA",
+        dgAddRow: "ADD ROW",
+        dgDataImported: "Data imported",
+        dgDataImporting: "Importing data",
+        dgNewCol: "New Column",
+        dgSortAsc: "Sort Ascending",
+        dgSortDec: "Sort Descending",
+        dgSortAscMonth: "Sort as Month Names Ascending",
+        dgSortDecMonth: "Sort as Month Names Decending",
+        dgDelCol: "Delete Column",
+        dgDelColConfirm: "Really delete the column?",
+        dgInsColBefore: "Insert Column Before",
+        dgInsColAfter: "Insert Column After",
+        customizeSimple: "SIMPLE",
+        customizeAdvanced: "ADVANCED",
+        customizeCustomCode: "CUSTOM CODE",
+        customizePreview: "PREVIEW OPTIONS",
+        "option.cat.title": "Titles",
+        "option.subcat.titles": "Main titles",
+        "option.cat.general": "General",
+        "option.subcat.size": "Chart size",
+        "option.subcat.interaction": "Chart Interaction",
+        "option.cat.appearance": "Appearance",
+        "option.subcat.fonts": "Fonts",
+        "option.subcat.titlestyle": "Title Style",
+        "option.subcat.seriescolors": "Series Colors",
+        "option.subcat.chartarea": "Chart Area",
+        "option.subcat.plotarea": "Plot Area",
+        "option.cat.axes": "Axes",
+        "option.subcat.axessetup": "Axes Setup",
+        "option.subcat.xaxis": "X-Axis",
+        "option.subcat.yaxis": "Y-Axis",
+        "option.cat.series": "Data Series",
+        "option.cat.labels": "Value Labels",
+        "option.subcat.labels": "Value Labels",
+        "option.cat.legend": "Legend",
+        "option.subcat.general": "General",
+        "option.subcat.placement": "Placement",
+        "option.subcat.legendappearance": "Appearance",
+        "option.cat.tooltip": "Tooltip",
+        "option.subcat.colorborder": "Color and Border",
+        "option.cat.exporting": "Exporting",
+        "option.cat.localization": "Localization",
+        "option.subcat.numberformat": "Number formatting",
+        "option.subcat.exportbutton": "Exporting button and menu",
+        "option.subcat.zoombutton": "Zoom button",
+        "option.cat.credits": "Credits",
+        "option.series.label": "Series Labels",
+        "option.text.series.label.enabled": "Series label",
+        "option.tooltip.series.label.enabled":
+            "Enable or disable the series label. Series labels are placed as close to the series as possible in a natural way, seeking to avoid other series. The goal of this feature is to make the chart more easily readable, like if a human designer placed the labels in the optimal position.",
+        "option.text.series.label.style": "Series label style",
+        "options.tooltip.series.label.style": "",
+        "option.text.title.text": "Chart title",
+        "option.tooltip.title.text": "The main chart title.",
+        "option.text.subtitle.text": "Chart subtitle",
+        "option.tooltip.subtitle.text":
+            "The chart's subtitle, normally displayed with smaller fonts below the main title.",
+        "option.text.yAxis.title.text": "Y axis title",
+        "option.tooltip.yAxis.title.text":
+            "The Y axis title, normally displayed vertically along the Y axis.",
+        "option.text.chart.width": "Chart width",
+        "option.tooltip.chart.width":
+            "An explicit width for the chart. By default (when <code>null</code>) the width is calculated from the offset width of the containing element.",
+        "option.text.chart.height": "Chart height",
+        "option.tooltip.chart.height":
+            "An explicit height for the chart. By default (when <code>null</code>) the height is calculated from the offset height of the containing element, or 400 pixels if the containing element's height is 0.",
+        "option.text.chart.zoomType": "Allow zooming",
+        "option.tooltip.chart.zoomType":
+            "Decides in what dimensions the user can zoom by dragging the mouse. Can be one of <code>x</code>, <code>y</code> or <code>xy</code>.",
+        "option.text.chart.polar": "Polar (radar) projection",
+        "option.tooltip.chart.polar":
+            "When true, cartesian charts like line, spline, area and column are transformed into the polar coordinate system. Requires <code>highcharts-more.js</code>.",
+        "option.text.chart.style": "Font family",
+        "option.tooltip.chart.style": "The font to use throughout the chart",
+        "option.text.title.style": "Main title style",
+        "option.tooltip.title.style": "Styling for the main chart title",
+        "option.text.subtitle.style": "Subtitle style",
+        "option.tooltip.subtitle.style":
+            "Styling for the chart's subtitle, normally displayed with smaller fonts below the main title",
+        "option.text.colors": "Colors",
+        "option.tooltip.colors":
+            "Default colors for the data series, or for individual points in a pie series or a column series with individual colors. Colors will be picked in succession. If a color is explicitly set for each series in the <em>Data series</em> view, that color will take precedence.",
+        "option.text.chart.backgroundColor": "Background color",
+        "option.tooltip.chart.backgroundColor":
+            "Background color for the full chart area",
+        "option.text.chart.borderWidth": "Border width",
+        "option.tooltip.chart.borderWidth":
+            "The pixel width of the outer chart border.",
+        "option.text.chart.borderRadius": "Border corner radius",
+        "option.tooltip.chart.borderRadius":
+            "The corner radius of the outer chart border.",
+        "option.text.chart.borderColor": "Border color",
+        "option.tooltip.chart.borderColor": "The color of the outer chart border.",
+        "option.text.chart.plotBackgroundColor": "Background color",
+        "option.tooltip.chart.plotBackgroundColor":
+            "Background color for the plot area, the area inside the axes",
+        "option.text.chart.plotBackgroundImage": "Background image URL",
+        "option.tooltip.chart.plotBackgroundImage":
+            "The online URL for an image to use as the plot area background",
+        "option.text.chart.plotBorderWidth": "Border width",
+        "option.tooltip.chart.plotBorderWidth":
+            "The pixel width of the plot area border.",
+        "option.text.chart.plotBorderColor": "Border color",
+        "option.tooltip.chart.plotBorderColor":
+            "The color of the inner chart or plot area border.",
+        "option.text.chart.inverted": "Inverted axes",
+        "option.tooltip.chart.inverted":
+            '<p>Whether to invert the axes so that the x axis is vertical and y axis is horizontal. When true, the x axis is <a href="#xAxis.reversed">reversed</a> by default. If a bar series is present in the chart, it will be inverted automatically.</p>\r\n\r\n<p>Inverting the chart doesn\'t have an effect if there are no cartesian series in the chart, or if the chart is <a href="#chart.polar">polar</a>.</p>',
+        "option.text.xAxis.title.style": "X axis title",
+        "option.tooltip.xAxis.title.style": "Styling and text for the X axis title",
+        "option.text.xAxis.title.text": "Text",
+        "option.tooltip.xAxis.title.text":
+            "The actual text of the axis title. It can contain basic HTML text markup like &lt;b&gt;, &lt;i&gt; and spans with style.",
+        "option.text.xAxis.type": "Type",
+        "option.tooltip.xAxis.type": "The type of axis",
+        "option.text.xAxis.opposite": "Opposite side of chart",
+        "option.tooltip.xAxis.opposite":
+            "Whether to display the axis on the opposite side of the normal. The normal is on the left side for vertical axes and bottom for horizontal, so the opposite sides will be right and top respectively. This is typically used with dual or multiple axes.",
+        "option.text.xAxis.reversed": "Reversed direction",
+        "option.tooltip.xAxis.reversed":
+            "Whether to reverse the axis so that the highest number is closest to the origin. If the chart is inverted, the x axis is reversed by default.",
+        "option.text.xAxis.labels.format": "Axis labels format",
+        "option.tooltip.xAxis.labels.format":
+            "<p>A format string for the axis labels. The value is available through a variable <code>{value}</code>.</p><p><b>Units</b> can be added for example like <code>{value} USD</code>.</p><p><b>Formatting</b> can be added after a colon inside the variable, for example <code>USD {value:.2f}</code> to display two decimals, or <code>{value:%Y-%m-%d}</code> for a certain time format.",
+        "option.text.yAxis.title.style": "Y axis title style",
+        "option.tooltip.yAxis.title.style": "Styling and text for the X axis title",
+        "option.text.yAxis.type": "Type",
+        "option.tooltip.yAxis.type": "The type of axis",
+        "option.text.yAxis.opposite": "Opposite side of chart",
+        "option.tooltip.yAxis.opposite":
+            "Whether to display the axis on the opposite side of the normal. The normal is on the left side for vertical axes and bottom for horizontal, so the opposite sides will be right and top respectively. This is typically used with dual or multiple axes.",
+        "option.text.yAxis.reversed": "Reversed direction",
+        "option.tooltip.yAxis.reversed":
+            "Whether to reverse the axis so that the highest number is closest to the origin. If the chart is inverted, the x axis is reversed by default.",
+        "option.text.yAxis.labels.format": "Axis labels format",
+        "option.tooltip.yAxis.labels.format":
+            "<p>A format string for the axis labels. The value is available through a variable <code>{value}</code>.</p><p><b>Units</b> can be added for example like <code>{value} USD</code>.</p><p><b>Formatting</b> can be added after a colon inside the variable, for example <code>USD {value:.2f}</code> to display two decimals, or <code>{value:%Y-%m-%d}</code> for a certain time format.",
+        "option.text.series.type": "Series type",
+        "option.tooltip.series.type": "The type of series",
+        "option.text.series.color": "Color",
+        "option.tooltip.series.color":
+            'The main color of the series. If no color is given here, the color is pulled from the array of default colors as given in the "Appearance" section.',
+        "option.text.series.negativeColor": "Negative color",
+        "option.tooltip.series.negativeColor":
+            "The negative color of the series below the threshold. Threshold is default zero, this can be changed in the advanced settings.",
+        "option.text.series.colorByPoint": "Color by point",
+        "option.tooltip.series.colorByPoint":
+            'Use one color per point. Colors can be changed in the "Appearance" section.',
+        "option.text.series.dashStyle": "Dash style",
+        "option.tooltip.series.dashStyle":
+            "A name for the dash style to use for the graph. Applies only to series type having a graph, like <code>line</code>, <code>spline</code>, <code>area</code> and <code>scatter</code> in  case it has a <code>lineWidth</code>. The value for the <code>dashStyle</code> include:\r\n\t\t    <ul>\r\n\t\t    \t<li>Solid</li>\r\n\t\t    \t<li>ShortDash</li>\r\n\t\t    \t<li>ShortDot</li>\r\n\t\t    \t<li>ShortDashDot</li>\r\n\t\t    \t<li>ShortDashDotDot</li>\r\n\t\t    \t<li>Dot</li>\r\n\t\t    \t<li>Dash</li>\r\n\t\t    \t<li>LongDash</li>\r\n\t\t    \t<li>DashDot</li>\r\n\t\t    \t<li>LongDashDot</li>\r\n\t\t    \t<li>LongDashDotDot</li>\r\n\t\t    </ul>",
+        "option.text.series.marker.enabled": "Enable point markers",
+        "option.tooltip.series.marker.enabled":
+            "Enable or disable the point marker. If <code>null</code>, the markers are hidden when the data is dense, and shown for more widespread data points.",
+        "option.text.series.marker.symbol": "Marker symbol",
+        "option.tooltip.series.marker.symbol":
+            '<p>A predefined shape or symbol for the marker. When null, the symbol is pulled from options.symbols. Other possible values are "circle", "square", "diamond", "triangle" and "triangle-down".</p>\r\n\r\n<p>Additionally, the URL to a graphic can be given on this form:  "url(graphic.png)". Note that for the image to be applied to exported charts, its URL needs to be accessible by the export server.</p>\r\n\r\n<p>Custom callbacks for symbol path generation can also be added to <code>Highcharts.SVGRenderer.prototype.symbols</code>. The callback is then used by its method name, as shown in the demo.</p>',
+        "option.text.series.pattern": "Pattern",
+        "option.tooltip.series.pattern": "Pattern fill for area",
+        "option.text.series.fill": "Fill color",
+        "option.tooltip.series.fill": "The color for the pattern chosen",
+        "option.text.series.datasorting": "Sort data",
+        "option.tooltip.series.datasorting":
+            "Enable the sorting of data when available",
+        "option.text.plotOptions.dataLabels.alignment": "Align legends",
+        "option.tooltip.plotOptions.dataLabels.alignment":
+            "Align the legends to connectors or plot edges",
+        "option.text.plotOptions.dataLabels.connectorShape": "Connector shape",
+        "option.tooltip.plotOptions.dataLabels.connectorShape":
+            "Specifies the method that is used to generate the connector path.",
+        "option.text.plotOptions.dataLabels.crookDistance": "Crook distance",
+        "option.tooltip.plotOptions.dataLabels.crookDistance":
+            "It defines how far from the vertical plot edge the coonnector path should be crooked.",
+        "option.text.plotOptions.series.dataLabels.enabled":
+            "Enable data labels for all series",
+        "option.tooltip.plotOptions.series.dataLabels.enabled":
+            "Show small labels next to each data value (point, column, pie slice etc)",
+        "option.text.plotOptions.series.dataLabels.style": "Text style",
+        "option.tooltip.plotOptions.series.dataLabels.style": "Styles for the label.",
+        "option.text.legend.enabled": "Enable legend",
+        "option.tooltip.legend.enabled": "Enable or disable the legend.",
+        "option.text.legend.layout": "Item layout",
+        "option.tooltip.legend.layout":
+            'The layout of the legend items. Can be one of "horizontal" or "vertical".',
+        "option.text.legend.align": "Horizontal alignment",
+        "option.tooltip.legend.align":
+            "<p>The horizontal alignment of the legend box within the chart area. Valid values are <code>left</code>, <code>center</code> and <code>right</code>.</p>\r\n\r\n<p>In the case that the legend is aligned in a corner position, the <code>layout</code> option will determine whether to place it above/below or on the side of the plot area.</p>",
+        "option.text.legend.x": "Horizontal offset",
+        "option.tooltip.legend.x":
+            "The pixel offset of the legend relative to its alignment",
+        "option.text.legend.verticalAlign": "Vertical alignment",
+        "option.tooltip.legend.verticalAlign":
+            "<p>The vertical alignment of the legend box. Can be one of <code>top</code>, <code>middle</code> or  <code>bottom</code>. Vertical position can be further determined by the <code>y</code> option.</p>\r\n\r\n<p>In the case that the legend is aligned in a corner position, the <code>layout</code> option will determine whether to place it above/below or on the side of the plot area.</p>",
+        "option.text.legend.y": "Vertical offset",
+        "option.tooltip.legend.y":
+            "The pixel offset of the legend relative to its alignment",
+        "option.text.legend.floating": "Float on top of plot area",
+        "option.tooltip.legend.floating":
+            "When the legend is floating, the plot area ignores it and is allowed to be placed below it.",
+        "option.text.legend.itemStyle": "Text style",
+        "option.tooltip.legend.itemStyle":
+            "CSS styles for each legend item. Only a subset of CSS is supported, notably those options related to text.",
+        "option.text.legend.itemHiddenStyle": "Text style hidden",
+        "option.tooltip.legend.itemHiddenStyle":
+            "CSS styles for each legend item when the corresponding series or point is hidden. Only a subset of CSS is supported, notably those options related to text. Properties are inherited from <code>style</code> unless overridden here.",
+        "option.text.legend.backgroundColor": "Background color",
+        "option.tooltip.legend.backgroundColor": "The background color of the legend.",
+        "option.text.legend.borderWidth": "Border width",
+        "option.tooltip.legend.borderWidth":
+            "The width of the drawn border around the legend.",
+        "option.text.legend.borderRadius": "Border corner radius",
+        "option.tooltip.legend.borderRadius": "The border corner radius of the legend.",
+        "option.text.legend.borderColor": "Border color",
+        "option.tooltip.legend.borderColor":
+            "The color of the drawn border around the legend.",
+        "option.text.tooltip.enabled": "Enable tooltip",
+        "option.tooltip.tooltip.enabled":
+            "Enable or disable the tooltip. The tooltip is the information box that appears on mouse-over or touch on a point.",
+        "option.text.tooltip.shared": "Shared between series",
+        "option.tooltip.tooltip.shared":
+            "When the tooltip is shared, the entire plot area will capture mouse movement or touch events. Tooltip texts for series types with ordered data (not pie, scatter, flags etc) will be shown in a single bubble. This is recommended for single series charts and for tablet/mobile optimized charts.",
+        "option.text.tooltip.backgroundColor": "Background color",
+        "option.tooltip.tooltip.backgroundColor": "The background color of the tooltip",
+        "option.text.tooltip.borderWidth": "Border width",
+        "option.tooltip.tooltip.borderWidth":
+            '<p>The pixel width of the tooltip border.</p>\r\n\r\n<p>In <a href="http://www.highcharts.com/docs/chart-design-and-style/style-by-css">styled mode</a>, the stroke width is set in the <code>.highcharts-tooltip-box</code> class.</p>',
+        "option.text.tooltip.borderRadius": "Border corner radius",
+        "option.tooltip.tooltip.borderRadius":
+            "The radius of the rounded border corners.",
+        "option.text.tooltip.borderColor": "Border color",
+        "option.tooltip.tooltip.borderColor":
+            "The border color of the tooltip. If no color is given, the corresponding series color is used.",
+        "option.text.exporting.enabled": "Enable exporting",
+        "option.tooltip.exporting.enabled":
+            "Enable the context button on the top right of the chart, allowing end users to download image exports.",
+        "option.text.exporting.sourceWidth": "Exported width",
+        "option.tooltip.exporting.sourceWidth":
+            "The width of the original chart when exported. The pixel width of the exported image is then multiplied by the <em>Scaling factor</em>.",
+        "option.text.exporting.scale": "Scaling factor",
+        "option.tooltip.exporting.scale":
+            "The export scale. Note that this is overridden if width is set.",
+        "option.text.lang.decimalPoint": "Decimal point",
+        "option.tooltip.lang.decimalPoint": "The decimal point used for all numbers",
+        "option.text.lang.thousandsSep": "Thousands separator",
+        "option.tooltip.lang.thousandsSep":
+            "The thousands separator used for all numbers",
+        "option.text.lang.contextButtonTitle": "Context button title",
+        "option.tooltip.lang.contextButtonTitle":
+            "Exporting module menu. The tooltip title for the context menu holding print and export menu items.",
+        "option.text.lang.printChart": "Print chart",
+        "option.tooltip.lang.printChart":
+            "Exporting module only. The text for the menu item to print the chart.",
+        "option.text.lang.downloadPNG": "Download PNG",
+        "option.tooltip.lang.downloadPNG":
+            "Exporting module only. The text for the PNG download menu item.",
+        "option.text.lang.downloadJPEG": "Download JPEG",
+        "option.tooltip.lang.downloadJPEG":
+            "Exporting module only. The text for the JPEG download menu item.",
+        "option.text.lang.downloadPDF": "Download PDF",
+        "option.tooltip.lang.downloadPDF":
+            "Exporting module only. The text for the PDF download menu item.",
+        "option.text.lang.downloadSVG": "Download SVG",
+        "option.tooltip.lang.downloadSVG":
+            "Exporting module only. The text for the SVG download menu item.",
+        "option.text.lang.resetZoom": "Reset zoom button",
+        "option.tooltip.lang.resetZoom":
+            "The text for the label appearing when a chart is zoomed.",
+        "option.text.credits.enabled": "Enable credits",
+        "option.tooltip.credits.enabled": "Whether to show the credits text",
+        "option.text.credits.text": "Credits text",
+        "option.tooltip.credits.text": "The text for the credits label",
+        "option.text.credits.href": "Link",
+        "option.tooltip.credits.href": "The URL for the credits label",
+    },
 });
 
 /*******************************************************************************
@@ -9607,1065 +9605,1084 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // @format
 
 highed.meta.optionsExtended = {
-  options: {
-    'option.cat.title': [
-      {
-        text: 'option.subcat.titles',
-        options: [
-          {
-            id: 'title--text',
-            pid: 'title.text',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'Chart title',
-            parent: 'title'
-          },
-          {
-            id: 'subtitle--text',
-            pid: 'subtitle.text',
-            dataType: 'string',
-            context: 'General',
-            parent: 'subtitle'
-          },
-          {
-            id: 'yAxis-title--text',
-            dataIndex: 0,
-            pid: 'yAxis.title.text',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'Values',
-            parent: 'yAxis-title'
-          }
-        ]
-      }
-    ],
-    'option.cat.general': [
-      {
-        text: 'option.subcat.size',
-        options: [
-          {
-            id: 'chart--width',
-            custom: {
-              minValue: 50,
-              maxValue: 5000,
-              step: 10
+    options: {
+        "option.cat.title": [
+            {
+                text: "option.subcat.titles",
+                options: [
+                    {
+                        id: "title--text",
+                        pid: "title.text",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "Chart title",
+                        parent: "title",
+                    },
+                    {
+                        id: "subtitle--text",
+                        pid: "subtitle.text",
+                        dataType: "string",
+                        context: "General",
+                        parent: "subtitle",
+                    },
+                    {
+                        id: "yAxis-title--text",
+                        dataIndex: 0,
+                        pid: "yAxis.title.text",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "Values",
+                        parent: "yAxis-title",
+                    },
+                ],
             },
-            pid: 'chart.width',
-            dataType: 'number',
-            context: 'General',
-            defaults: 'null',
-            parent: 'chart'
-          },
-          {
-            id: 'chart--height',
-            custom: {
-              minValue: 50,
-              maxValue: 5000,
-              step: 10
+        ],
+        "option.cat.general": [
+            {
+                text: "option.subcat.size",
+                options: [
+                    {
+                        id: "chart--width",
+                        custom: {
+                            minValue: 50,
+                            maxValue: 5000,
+                            step: 10,
+                        },
+                        pid: "chart.width",
+                        dataType: "number",
+                        context: "General",
+                        defaults: "null",
+                        parent: "chart",
+                    },
+                    {
+                        id: "chart--height",
+                        custom: {
+                            minValue: 50,
+                            maxValue: 5000,
+                            step: 10,
+                        },
+                        pid: "chart.height",
+                        dataType: "number",
+                        context: "General",
+                        defaults: "null",
+                        parent: "chart",
+                    },
+                ],
             },
-            pid: 'chart.height',
-            dataType: 'number',
-            context: 'General',
-            defaults: 'null',
-            parent: 'chart'
-          }
-        ]
-      },
-      {
-        text: 'option.subcat.interaction',
-        options: [
-          {
-            id: 'chart--zoomType',
-            pid: 'chart.zoomType',
-            dataType: 'string',
-            context: 'General',
-            parent: 'chart',
-            values: '[null, "x", "y", "xy"]'
-          },
-          {
-            id: 'chart--polar',
-            pid: 'chart.polar',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'false',
-            parent: 'chart'
-          }
-        ]
-      }
-    ],
-    'option.cat.appearance': [
-      {
-        text: 'option.subcat.fonts',
-        options: [
-          {
-            id: 'chart--style',
-            dataType: 'font',
-            pid: 'chart.style',
-            context: 'General',
-            defaults:
-              '{"fontFamily":"\\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Verdana, Arial, Helvetica, sans-serif","fontSize":"12px"}',
-            parent: 'chart'
-          }
-        ]
-      },
-      {
-        text: 'option.subcat.titlestyle',
-        options: [
-          {
-            id: 'title--style',
-            dataType: 'font',
-            pid: 'title.style',
-            context: 'General',
-            defaults: '{ "color": "#333333", "fontSize": "18px" }',
-            parent: 'title'
-          },
-          {
-            id: 'subtitle--style',
-            dataType: 'font',
-            pid: 'subtitle.style',
-            context: 'General',
-            defaults: '{ "color": "#666666" }',
-            parent: 'subtitle'
-          }
-        ]
-      },
-      {
-        text: 'option.subcat.seriescolors',
-        options: [
-          {
-            id: 'colors',
-            pid: 'colors',
-            dataType: 'array<color>',
-            context: 'General',
-            defaults:
-              '[ "#7cb5ec" , "#434348" , "#90ed7d" , "#f7a35c" , "#8085e9" , "#f15c80" , "#e4d354" , "#2b908f" , "#f45b5b" , "#91e8e1"]'
-          }
-        ]
-      },
-      {
-        text: 'option.subcat.chartarea',
-        options: [
-          {
-            id: 'chart--backgroundColor',
-            pid: 'chart.backgroundColor',
-            dataType: 'color',
-            context: 'General',
-            defaults: '#FFFFFF',
-            parent: 'chart'
-          },
-          {
-            id: 'chart--borderWidth',
-            custom: {
-              minValue: 0
+            {
+                text: "option.subcat.interaction",
+                options: [
+                    {
+                        id: "chart--zoomType",
+                        pid: "chart.zoomType",
+                        dataType: "string",
+                        context: "General",
+                        parent: "chart",
+                        values: '[null, "x", "y", "xy"]',
+                    },
+                    {
+                        id: "chart--polar",
+                        pid: "chart.polar",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "false",
+                        parent: "chart",
+                    },
+                ],
             },
-            pid: 'chart.borderWidth',
-            dataType: 'number',
-            context: 'General',
-            defaults: '0',
-            parent: 'chart'
-          },
-          {
-            id: 'chart--borderRadius',
-            custom: {
-              minValue: 0
+        ],
+        "option.cat.appearance": [
+            {
+                text: "option.subcat.fonts",
+                options: [
+                    {
+                        id: "chart--style",
+                        dataType: "font",
+                        pid: "chart.style",
+                        context: "General",
+                        defaults:
+                            '{"fontFamily":"\\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Verdana, Arial, Helvetica, sans-serif","fontSize":"12px"}',
+                        parent: "chart",
+                    },
+                ],
             },
-            pid: 'chart.borderRadius',
-            dataType: 'number',
-            context: 'General',
-            defaults: '0',
-            parent: 'chart'
-          },
-          {
-            id: 'chart--borderColor',
-            pid: 'chart.borderColor',
-            dataType: 'color',
-            context: 'General',
-            defaults: '#335cad',
-            parent: 'chart'
-          }
-        ]
-      },
-      {
-        text: 'option.subcat.plotarea',
-        options: [
-          {
-            id: 'chart--plotBackgroundColor',
-            pid: 'chart.plotBackgroundColor',
-            dataType: 'color',
-            context: 'General',
-            parent: 'chart'
-          },
-          {
-            id: 'chart--plotBackgroundImage',
-            pid: 'chart.plotBackgroundImage',
-            dataType: 'string',
-            context: 'General',
-            parent: 'chart'
-          },
-          {
-            id: 'chart--plotBorderWidth',
-            pid: 'chart.plotBorderWidth',
-            dataType: 'number',
-            context: 'General',
-            defaults: '0',
-            parent: 'chart'
-          },
-          {
-            id: 'chart--plotBorderColor',
-            pid: 'chart.plotBorderColor',
-            dataType: 'color',
-            context: 'General',
-            defaults: '#cccccc',
-            parent: 'chart'
-          }
-        ]
-      }
-    ],
-    'option.cat.axes': [
-      {
-        text: 'option.subcat.axessetup',
-        options: [
-          {
-            id: 'chart--inverted',
-            pid: 'chart.inverted',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'false',
-            parent: 'chart'
-          }
-        ]
-      },
-      {
-        id: 'xAxis',
-        text: 'option.subcat.xaxis',
-        options: [
-          {
-            id: 'xAxis-title--style',
-            dataType: 'font',
-            dataIndex: 0,
-            pid: 'xAxis.title.style',
-            context: 'General',
-            defaults: '{ "color": "#666666" }',
-            parent: 'xAxis-title'
-          },
-          {
-            id: 'xAxis-title--text',
-            dataIndex: 0,
-            pid: 'xAxis.title.text',
-            dataType: 'string',
-            context: 'General',
-            parent: 'xAxis-title'
-          },
-          {
-            id: 'xAxis--type',
-            dataIndex: 0,
-            pid: 'xAxis.type',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'linear',
-            parent: 'xAxis',
-            values: '["linear", "logarithmic", "datetime", "category"]'
-          },
-          {
-            id: 'xAxis--opposite',
-            dataIndex: 0,
-            pid: 'xAxis.opposite',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'false',
-            parent: 'xAxis'
-          },
-          {
-            id: 'xAxis--reversed',
-            dataIndex: 0,
-            pid: 'xAxis.reversed',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'false',
-            parent: 'xAxis'
-          },
-          {
-            id: 'xAxis-labels--format',
-            dataIndex: 0,
-            pid: 'xAxis.labels.format',
-            dataType: 'string',
-            context: 'General',
-            defaults: '{value}',
-            parent: 'xAxis-labels'
-          }
-        ]
-      },
-      {
-        id: 'yAxis',
-        text: 'option.subcat.yaxis',
-        options: [
-          {
-            id: 'yAxis-title--style',
-            dataType: 'font',
-            dataIndex: 0,
-            pid: 'yAxis.title.style',
-            context: 'General',
-            defaults: '{ "color": "#666666" }',
-            parent: 'yAxis-title'
-          },
-          {
-            id: 'yAxis--type',
-            dataIndex: 0,
-            pid: 'yAxis.type',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'linear',
-            parent: 'yAxis',
-            values: '["linear", "logarithmic", "datetime", "category"]'
-          },
-          {
-            id: 'yAxis--opposite',
-            dataIndex: 0,
-            pid: 'yAxis.opposite',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'false',
-            parent: 'yAxis'
-          },
-          {
-            id: 'yAxis--reversed',
-            dataIndex: 0,
-            pid: 'yAxis.reversed',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'false',
-            parent: 'yAxis'
-          },
-          {
-            id: 'yAxis-labels--format',
-            dataIndex: 0,
-            pid: 'yAxis.labels.format',
-            dataType: 'string',
-            context: 'General',
-            defaults: '{value}',
-            parent: 'yAxis-labels'
-          }
-        ]
-      }
-    ],
-    'option.cat.series': [
-      {
-        id: 'series',
-        array: true,
-        text: 'option.cat.series',
-        controlledBy: {
-          title: 'Select Series',
-          options: 'series',
-          optionsTitle: 'name'
-        },
-        filteredBy: 'series--type',
-        options: [
-          {
-            id: 'series--type',
-            pid: 'series.type',
-            dataType: 'string',
-            context: 'General',
-            parent: 'series<treemap>',
-            values:
-              '[null, "line", "spline", "column", "area", "areaspline", "pie", "arearange", "areasplinerange", "boxplot", "bubble", "columnrange", "errorbar", "funnel", "gauge", "scatter", "waterfall"]',
-            subType: [
-              'treemap',
-              'scatter',
-              'line',
-              'gauge',
-              'heatmap',
-              'spline',
-              'funnel',
-              'areaspline',
-              'area',
-              'bar',
-              'bubble',
-              'areasplinerange',
-              'boxplot',
-              'pie',
-              'arearange',
-              'column',
-              'waterfall',
-              'columnrange',
-              'pyramid',
-              'polygon',
-              'solidgauge',
-              'errorbar'
-            ],
-            subTypeDefaults: {}
-          },
-          {
-            id: 'series--color',
-            pid: 'series.color',
-            dataType: 'color',
-            context: 'General',
-            defaults: 'null',
-            parent: 'series<boxplot>',
-            subType: [
-              'boxplot',
-              'column',
-              'waterfall',
-              'columnrange',
-              'heatmap',
-              'area',
-              'scatter',
-              'bar',
-              'treemap',
-              'arearange',
-              'bubble',
-              'errorbar',
-              'spline',
-              'polygon',
-              'line',
-              'gauge',
-              'areaspline',
-              'areasplinerange'
-            ],
-            subTypeDefaults: {
-              heatmap: 'null',
-              treemap: 'null',
-              errorbar: '#000000'
-            }
-          },
-          {
-            id: 'series--negativeColor',
-            pid: 'series.negativeColor',
-            dataType: 'color',
-            context: 'General',
-            defaults: 'null',
-            parent: 'series<gauge>',
-            subType: [
-              'gauge',
-              'arearange',
-              'areasplinerange',
-              'line',
-              'errorbar',
-              'boxplot',
-              'areaspline',
-              'spline',
-              'bar',
-              'scatter',
-              'polygon',
-              'bubble',
-              'area',
-              'column'
-            ],
-            subTypeDefaults: {
-              arearange: 'null',
-              areasplinerange: 'null',
-              line: 'null',
-              errorbar: 'null',
-              boxplot: 'null',
-              areaspline: 'null',
-              spline: 'null',
-              bar: 'null',
-              scatter: 'null',
-              polygon: 'null',
-              bubble: 'null',
-              area: 'null',
-              column: 'null'
-            }
-          },
-          {
-            id: 'series--colorByPoint',
-            pid: 'series.colorByPoint',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'false',
-            parent: 'series<treemap>',
-            subType: [
-              'treemap',
-              'heatmap',
-              'column',
-              'errorbar',
-              'columnrange',
-              'boxplot',
-              'bar',
-              'waterfall'
-            ],
-            subTypeDefaults: {
-              heatmap: 'false',
-              column: 'false',
-              errorbar: 'false',
-              columnrange: 'false',
-              boxplot: 'false',
-              bar: 'false',
-              waterfall: 'false'
-            }
-          },
-          {
-            id: 'series--dashStyle',
-            pid: 'series.dashStyle',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'Solid',
-            parent: 'series<areasplinerange>',
-            values:
-              '["Solid", "ShortDash", "ShortDot", "ShortDashDot", "ShortDashDotDot", "Dot", "Dash" ,"LongDash", "DashDot", "LongDashDot", "LongDashDotDot"]',
-            subType: [
-              'areasplinerange',
-              'polygon',
-              'areaspline',
-              'spline',
-              'scatter',
-              'area',
-              'bubble',
-              'arearange',
-              'waterfall',
-              'line'
-            ],
-            subTypeDefaults: {
-              polygon: 'Solid',
-              areaspline: 'Solid',
-              spline: 'Solid',
-              scatter: 'Solid',
-              area: 'Solid',
-              bubble: 'Solid',
-              arearange: 'Solid',
-              waterfall: 'Dot',
-              line: 'Solid'
-            }
-          },
-          {
-            id: 'series-marker--enabled',
-            pid: 'series.marker.enabled',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'null',
-            parent: 'series<bubble>-marker',
-            subType: [
-              'bubble',
-              'area',
-              'scatter',
-              'areaspline',
-              'spline',
-              'polygon',
-              'line'
-            ],
-            subTypeDefaults: {
-              area: 'null',
-              scatter: 'null',
-              areaspline: 'null',
-              spline: 'null',
-              polygon: 'null',
-              line: 'null'
-            }
-          },
-          {
-            id: 'series-marker--symbol',
-            pid: 'series.marker.symbol',
-            dataType: 'string',
-            context: 'General',
-            parent: 'series<bubble>-marker',
-            values:
-              '[null, "circle", "square", "diamond", "triangle", "triangle-down"]',
-            subType: [
-              'bubble',
-              'polygon',
-              'line',
-              'scatter',
-              'spline',
-              'area',
-              'areaspline'
-            ],
-            subTypeDefaults: {}
-          },
+            {
+                text: "option.subcat.titlestyle",
+                options: [
+                    {
+                        id: "title--style",
+                        dataType: "font",
+                        pid: "title.style",
+                        context: "General",
+                        defaults: '{ "color": "#333333", "fontSize": "18px" }',
+                        parent: "title",
+                    },
+                    {
+                        id: "subtitle--style",
+                        dataType: "font",
+                        pid: "subtitle.style",
+                        context: "General",
+                        defaults: '{ "color": "#666666" }',
+                        parent: "subtitle",
+                    },
+                ],
+            },
+            {
+                text: "option.subcat.seriescolors",
+                options: [
+                    {
+                        id: "colors",
+                        pid: "colors",
+                        dataType: "array<color>",
+                        context: "General",
+                        defaults:
+                            '[ "#7cb5ec" , "#434348" , "#90ed7d" , "#f7a35c" , "#8085e9" , "#f15c80" , "#e4d354" , "#2b908f" , "#f45b5b" , "#91e8e1"]',
+                    },
+                ],
+            },
+            {
+                text: "option.subcat.chartarea",
+                options: [
+                    {
+                        id: "chart--backgroundColor",
+                        pid: "chart.backgroundColor",
+                        dataType: "color",
+                        context: "General",
+                        defaults: "#FFFFFF",
+                        parent: "chart",
+                    },
+                    {
+                        id: "chart--borderWidth",
+                        custom: {
+                            minValue: 0,
+                        },
+                        pid: "chart.borderWidth",
+                        dataType: "number",
+                        context: "General",
+                        defaults: "0",
+                        parent: "chart",
+                    },
+                    {
+                        id: "chart--borderRadius",
+                        custom: {
+                            minValue: 0,
+                        },
+                        pid: "chart.borderRadius",
+                        dataType: "number",
+                        context: "General",
+                        defaults: "0",
+                        parent: "chart",
+                    },
+                    {
+                        id: "chart--borderColor",
+                        pid: "chart.borderColor",
+                        dataType: "color",
+                        context: "General",
+                        defaults: "#335cad",
+                        parent: "chart",
+                    },
+                ],
+            },
+            {
+                text: "option.subcat.plotarea",
+                options: [
+                    {
+                        id: "chart--plotBackgroundColor",
+                        pid: "chart.plotBackgroundColor",
+                        dataType: "color",
+                        context: "General",
+                        parent: "chart",
+                    },
+                    {
+                        id: "chart--plotBackgroundImage",
+                        pid: "chart.plotBackgroundImage",
+                        dataType: "string",
+                        context: "General",
+                        parent: "chart",
+                    },
+                    {
+                        id: "chart--plotBorderWidth",
+                        pid: "chart.plotBorderWidth",
+                        dataType: "number",
+                        context: "General",
+                        defaults: "0",
+                        parent: "chart",
+                    },
+                    {
+                        id: "chart--plotBorderColor",
+                        pid: "chart.plotBorderColor",
+                        dataType: "color",
+                        context: "General",
+                        defaults: "#cccccc",
+                        parent: "chart",
+                    },
+                ],
+            },
+        ],
+        "option.cat.axes": [
+            {
+                text: "option.subcat.axessetup",
+                options: [
+                    {
+                        id: "chart--inverted",
+                        pid: "chart.inverted",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "false",
+                        parent: "chart",
+                    },
+                ],
+            },
+            {
+                id: "xAxis",
+                text: "option.subcat.xaxis",
+                options: [
+                    {
+                        id: "xAxis-title--style",
+                        dataType: "font",
+                        dataIndex: 0,
+                        pid: "xAxis.title.style",
+                        context: "General",
+                        defaults: '{ "color": "#666666" }',
+                        parent: "xAxis-title",
+                    },
+                    {
+                        id: "xAxis-title--text",
+                        dataIndex: 0,
+                        pid: "xAxis.title.text",
+                        dataType: "string",
+                        context: "General",
+                        parent: "xAxis-title",
+                    },
+                    {
+                        id: "xAxis--type",
+                        dataIndex: 0,
+                        pid: "xAxis.type",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "linear",
+                        parent: "xAxis",
+                        values: '["linear", "logarithmic", "datetime", "category"]',
+                    },
+                    {
+                        id: "xAxis--opposite",
+                        dataIndex: 0,
+                        pid: "xAxis.opposite",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "false",
+                        parent: "xAxis",
+                    },
+                    {
+                        id: "xAxis--reversed",
+                        dataIndex: 0,
+                        pid: "xAxis.reversed",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "false",
+                        parent: "xAxis",
+                    },
+                    {
+                        id: "xAxis-labels--format",
+                        dataIndex: 0,
+                        pid: "xAxis.labels.format",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "{value}",
+                        parent: "xAxis-labels",
+                    },
+                ],
+            },
+            {
+                id: "yAxis",
+                text: "option.subcat.yaxis",
+                options: [
+                    {
+                        id: "yAxis-title--style",
+                        dataType: "font",
+                        dataIndex: 0,
+                        pid: "yAxis.title.style",
+                        context: "General",
+                        defaults: '{ "color": "#666666" }',
+                        parent: "yAxis-title",
+                    },
+                    {
+                        id: "yAxis--type",
+                        dataIndex: 0,
+                        pid: "yAxis.type",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "linear",
+                        parent: "yAxis",
+                        values: '["linear", "logarithmic", "datetime", "category"]',
+                    },
+                    {
+                        id: "yAxis--opposite",
+                        dataIndex: 0,
+                        pid: "yAxis.opposite",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "false",
+                        parent: "yAxis",
+                    },
+                    {
+                        id: "yAxis--reversed",
+                        dataIndex: 0,
+                        pid: "yAxis.reversed",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "false",
+                        parent: "yAxis",
+                    },
+                    {
+                        id: "yAxis-labels--format",
+                        dataIndex: 0,
+                        pid: "yAxis.labels.format",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "{value}",
+                        parent: "yAxis-labels",
+                    },
+                ],
+            },
+        ],
+        "option.cat.series": [
+            {
+                id: "series",
+                array: true,
+                text: "option.cat.series",
+                controlledBy: {
+                    title: "Select Series",
+                    options: "series",
+                    optionsTitle: "name",
+                },
+                filteredBy: "series--type",
+                options: [
+                    {
+                        id: "series--type",
+                        pid: "series.type",
+                        dataType: "string",
+                        context: "General",
+                        parent: "series<treemap>",
+                        values:
+                            '[null, "line", "spline", "column", "area", "areaspline", "pie", "arearange", "areasplinerange", "bubble", "columnrange", "errorbar", "gauge", "scatter", "waterfall"]',
+                        subType: [
+                            "treemap",
+                            "scatter",
+                            "line",
+                            "gauge",
+                            "heatmap",
+                            "spline",
+                            "areaspline",
+                            "area",
+                            "bar",
+                            "bubble",
+                            "areasplinerange",
+                            "pie",
+                            "arearange",
+                            "column",
+                            "waterfall",
+                            "columnrange",
+                            "pyramid",
+                            "polygon",
+                            "solidgauge",
+                            "errorbar",
+                        ],
+                        subTypeDefaults: {},
+                    },
+                    {
+                        id: "series--color",
+                        pid: "series.color",
+                        dataType: "color",
+                        context: "General",
+                        defaults: "null",
+                        parent: "series<boxplot>",
+                        subType: [
+                            "boxplot",
+                            "column",
+                            "waterfall",
+                            "columnrange",
+                            "heatmap",
+                            "area",
+                            "scatter",
+                            "bar",
+                            "treemap",
+                            "arearange",
+                            "bubble",
+                            "errorbar",
+                            "spline",
+                            "polygon",
+                            "line",
+                            "gauge",
+                            "areaspline",
+                            "areasplinerange",
+                        ],
+                        subTypeDefaults: {
+                            heatmap: "null",
+                            treemap: "null",
+                            errorbar: "#000000",
+                        },
+                    },
+                    {
+                        id: "series--negativeColor",
+                        pid: "series.negativeColor",
+                        dataType: "color",
+                        context: "General",
+                        defaults: "null",
+                        parent: "series<gauge>",
+                        subType: [
+                            "gauge",
+                            "arearange",
+                            "areasplinerange",
+                            "line",
+                            "errorbar",
+                            "boxplot",
+                            "areaspline",
+                            "spline",
+                            "bar",
+                            "scatter",
+                            "polygon",
+                            "bubble",
+                            "area",
+                            "column",
+                        ],
+                        subTypeDefaults: {
+                            arearange: "null",
+                            areasplinerange: "null",
+                            line: "null",
+                            errorbar: "null",
+                            boxplot: "null",
+                            areaspline: "null",
+                            spline: "null",
+                            bar: "null",
+                            scatter: "null",
+                            polygon: "null",
+                            bubble: "null",
+                            area: "null",
+                            column: "null",
+                        },
+                    },
+                    {
+                        id: "series--colorByPoint",
+                        pid: "series.colorByPoint",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "false",
+                        parent: "series<treemap>",
+                        subType: [
+                            "treemap",
+                            "heatmap",
+                            "column",
+                            "errorbar",
+                            "columnrange",
+                            "boxplot",
+                            "bar",
+                            "waterfall",
+                        ],
+                        subTypeDefaults: {
+                            heatmap: "false",
+                            column: "false",
+                            errorbar: "false",
+                            columnrange: "false",
+                            boxplot: "false",
+                            bar: "false",
+                            waterfall: "false",
+                        },
+                    },
+                    {
+                        id: "series--dashStyle",
+                        pid: "series.dashStyle",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "Solid",
+                        parent: "series<areasplinerange>",
+                        values:
+                            '["Solid", "ShortDash", "ShortDot", "ShortDashDot", "ShortDashDotDot", "Dot", "Dash" ,"LongDash", "DashDot", "LongDashDot", "LongDashDotDot"]',
+                        subType: [
+                            "areasplinerange",
+                            "polygon",
+                            "areaspline",
+                            "spline",
+                            "scatter",
+                            "area",
+                            "bubble",
+                            "arearange",
+                            "waterfall",
+                            "line",
+                        ],
+                        subTypeDefaults: {
+                            polygon: "Solid",
+                            areaspline: "Solid",
+                            spline: "Solid",
+                            scatter: "Solid",
+                            area: "Solid",
+                            bubble: "Solid",
+                            arearange: "Solid",
+                            waterfall: "Dot",
+                            line: "Solid",
+                        },
+                    },
+                    {
+                        id: "series-marker--enabled",
+                        pid: "series.marker.enabled",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "null",
+                        parent: "series<bubble>-marker",
+                        subType: [
+                            "bubble",
+                            "area",
+                            "scatter",
+                            "areaspline",
+                            "spline",
+                            "polygon",
+                            "line",
+                        ],
+                        subTypeDefaults: {
+                            area: "null",
+                            scatter: "null",
+                            areaspline: "null",
+                            spline: "null",
+                            polygon: "null",
+                            line: "null",
+                        },
+                    },
+                    {
+                        id: "series-marker--symbol",
+                        pid: "series.marker.symbol",
+                        dataType: "string",
+                        context: "General",
+                        parent: "series<bubble>-marker",
+                        values:
+                            '[null, "circle", "square", "diamond", "triangle", "triangle-down"]',
+                        subType: [
+                            "bubble",
+                            "polygon",
+                            "line",
+                            "scatter",
+                            "spline",
+                            "area",
+                            "areaspline",
+                        ],
+                        subTypeDefaults: {},
+                    },
 
-          { 
-            id: 'series--fillColor-pattern-path-d',
-            pid: 'series.pattern',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'null',
-            parent: 'series<area>',
-            subType: ['area'],subTypeDefaults: {},
-            values: [
-              { id: "M30 0 L30 29 L1 29 L1 0 Z M29 0 L29 1 L1 1 L1 0 Z M28 0 L28 2 L0 2 L0 0 Z M27 0 L27 3 L0 3 L0 0 Z M26 0 L26 4 L0 4 L0 0 Z M25 0 L25 5 L0 5 L0 0 Z M24 0 L24 6 L0 6 L0 0 Z M23 0 L23 7 L0 7 L0 0 Z M22 0 L22 8 L0 8 L0 0 Z M21 0 L21 9 L0 9 L0 0 Z M20 0 L20 10 L0 10 L0 0 Z M19 0 L19 11 L0 11 L0 0 Z M18 0 L18 12 L0 12 L0 0 Z M17 0 L17 13 L0 13 L0 0 Z M16 0 L16 14 L0 14 L0 0 Z M15 0 L15 15 L0 15 L0 0 Z M14 0 L14 16 L0 16 L0 0 Z M13 0 L13 17 L0 17 L0 0 Z M12 0 L12 18 L0 18 L0 0 Z M11 0 L11 19 L0 19 L0 0 Z M10 0 L10 20 L0 20 L0 0 Z M9 0 L9 21 L0 21 L0 0 Z M8 0 L8 22 L0 22 L0 0 Z M7 0 L7 23 L0 23 L0 0 Z M6 0 L6 24 L0 24 L0 0 Z M5 0 L5 25 L0 25 L0 0 Z M4 0 L4 26 L0 26 L0 0 Z M3 0 L3 27 L0 27 L0 0 Z M2 0 L2 28 L0 28 L0 0 Z M1 0 L1 29 L0 29 L0 0 Z", title: "none" },
-              { id: "M 0 0 L 10 0 M 0 1 L 10 1 M 0 2 L 10 2", title: "Horizontal" },
-              { id: "M 0 0 L 0 10 M 1 0 L 1 10 M 2 0 L 2 10", title: "Vertical" },
-              { id: "M 0 0 L 10 10 M -1 9 L 1 11 M 9 -1 L 11 1", title: "Diagonal (Top-Left to Bottom-Right)" },
-              { id: "M 10 0 L 0 10 M 0 0 L 1 1 M 9 9 L 11 11", title: "Diagonal (Top-Right to Bottom-Left)" },
-              { id: "M 0 5 L 10 5 M 5 0 L 5 10", title: "Grid" },
-              { id: "M 0 0 L 10 10 M 10 0 L 0 10", title: "Diagonal Grid" },
-            ],
-            width: 50
-          },
-          { 
-            id: 'series--fillColor-pattern-color',
-            pid: 'series.fill',
-            dataType: 'color',
-            context: 'General',
-            defaults: 'null',
-            parent: 'series<area>',
-            subType: ['area'],subTypeDefaults: {},
-            width: 25
-          },
-          { 
-            id: 'series--dataSorting-enabled',
-            pid: 'series.datasorting',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: false,
-            subType: [
-              'gauge',
-              'arearange',
-              'areasplinerange',
-              'line',
-              'errorbar',
-              'boxplot',
-              'areaspline',
-              'spline',
-              'bar',
-              'scatter',
-              'polygon',
-              'bubble',
-              'area',
-              'column'
-            ],
-            subTypeDefaults: {
-              arearange: 'null',
-              areasplinerange: 'null',
-              line: 'null',
-              errorbar: 'null',
-              boxplot: 'null',
-              areaspline: 'null',
-              spline: 'null',
-              bar: 'null',
-              scatter: 'null',
-              polygon: 'null',
-              bubble: 'null',
-              area: 'null',
-              column: 'null'
-            }
-        },
-          // {
-          //   id: 'series-label--enabled',
-          //   pid: 'series.label.enabled',
-          //   defaults: 'true',
-          //   dataType: 'boolean',
-          //   subType: [
-          //     'line',
-          //     'spline',
-          //     'area',
-          //     'arearange',
-          //     'areaspline',
-          //     'waterfall',
-          //     'areasplinerange'
-          //   ],
-          //   subTypeDefaults: {}
-          // }
+                    {
+                        id: "series--fillColor-pattern-path-d",
+                        pid: "series.pattern",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "null",
+                        parent: "series<area>",
+                        subType: ["area"],
+                        subTypeDefaults: {},
+                        values: [
+                            {
+                                id:
+                                    "M30 0 L30 29 L1 29 L1 0 Z M29 0 L29 1 L1 1 L1 0 Z M28 0 L28 2 L0 2 L0 0 Z M27 0 L27 3 L0 3 L0 0 Z M26 0 L26 4 L0 4 L0 0 Z M25 0 L25 5 L0 5 L0 0 Z M24 0 L24 6 L0 6 L0 0 Z M23 0 L23 7 L0 7 L0 0 Z M22 0 L22 8 L0 8 L0 0 Z M21 0 L21 9 L0 9 L0 0 Z M20 0 L20 10 L0 10 L0 0 Z M19 0 L19 11 L0 11 L0 0 Z M18 0 L18 12 L0 12 L0 0 Z M17 0 L17 13 L0 13 L0 0 Z M16 0 L16 14 L0 14 L0 0 Z M15 0 L15 15 L0 15 L0 0 Z M14 0 L14 16 L0 16 L0 0 Z M13 0 L13 17 L0 17 L0 0 Z M12 0 L12 18 L0 18 L0 0 Z M11 0 L11 19 L0 19 L0 0 Z M10 0 L10 20 L0 20 L0 0 Z M9 0 L9 21 L0 21 L0 0 Z M8 0 L8 22 L0 22 L0 0 Z M7 0 L7 23 L0 23 L0 0 Z M6 0 L6 24 L0 24 L0 0 Z M5 0 L5 25 L0 25 L0 0 Z M4 0 L4 26 L0 26 L0 0 Z M3 0 L3 27 L0 27 L0 0 Z M2 0 L2 28 L0 28 L0 0 Z M1 0 L1 29 L0 29 L0 0 Z",
+                                title: "none",
+                            },
+                            {
+                                id: "M 0 0 L 10 0 M 0 1 L 10 1 M 0 2 L 10 2",
+                                title: "Horizontal",
+                            },
+                            {
+                                id: "M 0 0 L 0 10 M 1 0 L 1 10 M 2 0 L 2 10",
+                                title: "Vertical",
+                            },
+                            {
+                                id: "M 0 0 L 10 10 M -1 9 L 1 11 M 9 -1 L 11 1",
+                                title: "Diagonal (Top-Left to Bottom-Right)",
+                            },
+                            {
+                                id: "M 10 0 L 0 10 M 0 0 L 1 1 M 9 9 L 11 11",
+                                title: "Diagonal (Top-Right to Bottom-Left)",
+                            },
+                            { id: "M 0 5 L 10 5 M 5 0 L 5 10", title: "Grid" },
+                            {
+                                id: "M 0 0 L 10 10 M 10 0 L 0 10",
+                                title: "Diagonal Grid",
+                            },
+                        ],
+                        width: 50,
+                    },
+                    {
+                        id: "series--fillColor-pattern-color",
+                        pid: "series.fill",
+                        dataType: "color",
+                        context: "General",
+                        defaults: "null",
+                        parent: "series<area>",
+                        subType: ["area"],
+                        subTypeDefaults: {},
+                        width: 25,
+                    },
+                    {
+                        id: "series--dataSorting-enabled",
+                        pid: "series.datasorting",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: false,
+                        subType: [
+                            "gauge",
+                            "arearange",
+                            "areasplinerange",
+                            "line",
+                            "errorbar",
+                            "boxplot",
+                            "areaspline",
+                            "spline",
+                            "bar",
+                            "scatter",
+                            "polygon",
+                            "bubble",
+                            "area",
+                            "column",
+                        ],
+                        subTypeDefaults: {
+                            arearange: "null",
+                            areasplinerange: "null",
+                            line: "null",
+                            errorbar: "null",
+                            boxplot: "null",
+                            areaspline: "null",
+                            spline: "null",
+                            bar: "null",
+                            scatter: "null",
+                            polygon: "null",
+                            bubble: "null",
+                            area: "null",
+                            column: "null",
+                        },
+                    },
+                    // {
+                    //   id: 'series-label--enabled',
+                    //   pid: 'series.label.enabled',
+                    //   defaults: 'true',
+                    //   dataType: 'boolean',
+                    //   subType: [
+                    //     'line',
+                    //     'spline',
+                    //     'area',
+                    //     'arearange',
+                    //     'areaspline',
+                    //     'waterfall',
+                    //     'areasplinerange'
+                    //   ],
+                    //   subTypeDefaults: {}
+                    // }
 
-          // {
-          // id: 'series-label--style',
-          // pid: 'series.label.style',
-          // dataType: 'font'
-          // }
-        ]
-      }
-    ],
-    'option.cat.labels': [
-      {
-        id: 'data-labels',
-        text: 'option.subcat.labels',
-        options: [
-          {
-            id: 'plotOptions-series-dataLabels--enabled',
-            pid: 'plotOptions.series.dataLabels.enabled',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'false',
-            parent: 'plotOptions-series-dataLabels'
-          },
-          {
-            id: 'plotOptions-series-dataLabels--style',
-            pid: 'plotOptions.series.dataLabels.style',
-            dataType: 'cssobject',
-            context: 'General',
-            defaults:
-              '{"color": "contrast", "fontSize": "11px", "fontWeight": "bold", "textOutline": "1px 1px contrast" }',
-            parent: 'plotOptions-series-dataLabels'
-          },
-          {
-            id: 'plotOptions-pie--dataLabels-alignTo',
-            pid: 'plotOptions.dataLabels.alignment',
-            dataType: 'string',
-            context: 'General',
-            values: ['connectors', 'plotEdges'],
-            defaults: false,
-          },
-          {
-            id: 'plotOptions-pie--dataLabels-connectorShape',
-            pid: 'plotOptions.dataLabels.connectorShape',
-            dataType: 'string',
-            context: 'General',
-            values: ['straight', 'fixedOffset', 'crookedLine'],
-            defaults: false,
-          },
-          {
-            id: 'plotOptions-pie--dataLabels-crookDistance',
-            pid: 'plotOptions.dataLabels.crookDistance',
-            dataType: 'string',
-            context: 'General',
-            values: ['20%', '40%', '60%', '80%', '100%',],
-            defaults: false,
-          },
-        ]
-      }
-    ],
-    'option.cat.legend': [
-      {
-        text: 'option.subcat.general',
-        options: [
-          {
-            id: 'legend--enabled',
-            pid: 'legend.enabled',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'true',
-            parent: 'legend'
-          },
-          {
-            id: 'legend--layout',
-            pid: 'legend.layout',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'horizontal',
-            parent: 'legend',
-            values: '["horizontal", "vertical"]'
-          }
-        ]
-      },
-      {
-        text: 'option.subcat.placement',
-        options: [
-          {
-            id: 'legend--align',
-            pid: 'legend.align',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'center',
-            parent: 'legend',
-            values: '["left", "center", "right"]'
-          },
-          {
-            id: 'legend--x',
-            pid: 'legend.x',
-            dataType: 'number',
-            context: 'General',
-            defaults: '0',
-            parent: 'legend'
-          },
-          {
-            id: 'legend--verticalAlign',
-            pid: 'legend.verticalAlign',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'bottom',
-            parent: 'legend',
-            values: '["top", "middle", "bottom"]'
-          },
-          {
-            id: 'legend--y',
-            pid: 'legend.y',
-            dataType: 'number',
-            context: 'General',
-            defaults: '0',
-            parent: 'legend'
-          },
-          {
-            id: 'legend--floating',
-            pid: 'legend.floating',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'false',
-            parent: 'legend'
-          }
-        ]
-      },
-      {
-        text: 'option.subcat.legendappearance',
-        options: [
-          {
-            id: 'legend--itemStyle',
-            dataType: 'font',
-            pid: 'legend.itemStyle',
-            context: 'General',
-            defaults:
-              '{ "color": "#333333", "cursor": "pointer", "fontSize": "12px", "fontWeight": "bold" }',
-            parent: 'legend'
-          },
-          {
-            id: 'legend--itemHiddenStyle',
-            dataType: 'font',
-            pid: 'legend.itemHiddenStyle',
-            context: 'General',
-            defaults: '{ "color": "#cccccc" }',
-            parent: 'legend'
-          },
-          {
-            id: 'legend--backgroundColor',
-            pid: 'legend.backgroundColor',
-            dataType: 'color',
-            context: 'General',
-            parent: 'legend'
-          },
-          {
-            id: 'legend--borderWidth',
-            pid: 'legend.borderWidth',
-            dataType: 'number',
-            context: 'General',
-            defaults: '0',
-            parent: 'legend'
-          },
-          {
-            id: 'legend--borderRadius',
-            pid: 'legend.borderRadius',
-            dataType: 'number',
-            context: 'General',
-            defaults: '0',
-            parent: 'legend'
-          },
-          {
-            id: 'legend--borderColor',
-            pid: 'legend.borderColor',
-            dataType: 'color',
-            context: 'General',
-            defaults: '#999999',
-            parent: 'legend'
-          }
-        ]
-      }
-    ],
-    'option.cat.tooltip': [
-      {
-        text: 'option.subcat.general',
-        options: [
-          {
-            id: 'tooltip--enabled',
-            pid: 'tooltip.enabled',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'true',
-            parent: 'tooltip'
-          },
-          {
-            id: 'tooltip--shared',
-            pid: 'tooltip.shared',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'false',
-            parent: 'tooltip'
-          }
-        ]
-      },
-      {
-        text: 'option.subcat.colorborder',
-        options: [
-          {
-            id: 'tooltip--backgroundColor',
-            pid: 'tooltip.backgroundColor',
-            dataType: 'color',
-            context: 'General',
-            defaults: 'rgba(247,247,247,0.85)',
-            parent: 'tooltip'
-          },
-          {
-            id: 'tooltip--borderWidth',
-            custom: {
-              minValue: 0
+                    // {
+                    // id: 'series-label--style',
+                    // pid: 'series.label.style',
+                    // dataType: 'font'
+                    // }
+                ],
             },
-            pid: 'tooltip.borderWidth',
-            dataType: 'number',
-            context: 'General',
-            defaults: '1',
-            parent: 'tooltip'
-          },
-          {
-            id: 'tooltip--borderRadius',
-            custom: {
-              minValue: 0
+        ],
+        "option.cat.labels": [
+            {
+                id: "data-labels",
+                text: "option.subcat.labels",
+                options: [
+                    {
+                        id: "plotOptions-series-dataLabels--enabled",
+                        pid: "plotOptions.series.dataLabels.enabled",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "false",
+                        parent: "plotOptions-series-dataLabels",
+                    },
+                    {
+                        id: "plotOptions-series-dataLabels--style",
+                        pid: "plotOptions.series.dataLabels.style",
+                        dataType: "cssobject",
+                        context: "General",
+                        defaults:
+                            '{"color": "contrast", "fontSize": "11px", "fontWeight": "bold", "textOutline": "1px 1px contrast" }',
+                        parent: "plotOptions-series-dataLabels",
+                    },
+                    {
+                        id: "plotOptions-pie--dataLabels-alignTo",
+                        pid: "plotOptions.dataLabels.alignment",
+                        dataType: "string",
+                        context: "General",
+                        values: ["connectors", "plotEdges"],
+                        defaults: false,
+                    },
+                    {
+                        id: "plotOptions-pie--dataLabels-connectorShape",
+                        pid: "plotOptions.dataLabels.connectorShape",
+                        dataType: "string",
+                        context: "General",
+                        values: ["straight", "fixedOffset", "crookedLine"],
+                        defaults: false,
+                    },
+                    {
+                        id: "plotOptions-pie--dataLabels-crookDistance",
+                        pid: "plotOptions.dataLabels.crookDistance",
+                        dataType: "string",
+                        context: "General",
+                        values: ["20%", "40%", "60%", "80%", "100%"],
+                        defaults: false,
+                    },
+                ],
             },
-            pid: 'tooltip.borderRadius',
-            dataType: 'number',
-            context: 'General',
-            defaults: '3',
-            parent: 'tooltip'
-          },
-          {
-            id: 'tooltip--borderColor',
-            pid: 'tooltip.borderColor',
-            dataType: 'color',
-            context: 'General',
-            defaults: 'null',
-            parent: 'tooltip'
-          }
-        ]
-      }
-    ],
-    'option.cat.exporting': [
-      {
-        text: 'option.cat.exporting',
-        options: [
-          {
-            id: 'exporting--enabled',
-            pid: 'exporting.enabled',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'true',
-            parent: 'exporting'
-          },
-          {
-            id: 'exporting--sourceWidth',
-            custom: {
-              minValue: 10,
-              maxValue: 2000,
-              step: 10
+        ],
+        "option.cat.legend": [
+            {
+                text: "option.subcat.general",
+                options: [
+                    {
+                        id: "legend--enabled",
+                        pid: "legend.enabled",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "true",
+                        parent: "legend",
+                    },
+                    {
+                        id: "legend--layout",
+                        pid: "legend.layout",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "horizontal",
+                        parent: "legend",
+                        values: '["horizontal", "vertical"]',
+                    },
+                ],
             },
-            pid: 'exporting.sourceWidth',
-            dataType: 'number',
-            context: 'General',
-            parent: 'exporting',
-            values: ''
-          },
-          {
-            id: 'exporting--scale',
-            custom: {
-              minValue: 1,
-              maxValue: 4
+            {
+                text: "option.subcat.placement",
+                options: [
+                    {
+                        id: "legend--align",
+                        pid: "legend.align",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "center",
+                        parent: "legend",
+                        values: '["left", "center", "right"]',
+                    },
+                    {
+                        id: "legend--x",
+                        pid: "legend.x",
+                        dataType: "number",
+                        context: "General",
+                        defaults: "0",
+                        parent: "legend",
+                    },
+                    {
+                        id: "legend--verticalAlign",
+                        pid: "legend.verticalAlign",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "bottom",
+                        parent: "legend",
+                        values: '["top", "middle", "bottom"]',
+                    },
+                    {
+                        id: "legend--y",
+                        pid: "legend.y",
+                        dataType: "number",
+                        context: "General",
+                        defaults: "0",
+                        parent: "legend",
+                    },
+                    {
+                        id: "legend--floating",
+                        pid: "legend.floating",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "false",
+                        parent: "legend",
+                    },
+                ],
             },
-            pid: 'exporting.scale',
-            dataType: 'number',
-            context: 'General',
-            defaults: '2',
-            parent: 'exporting',
-            values: ''
-          }
-        ]
-      }
-    ],
-    'option.cat.localization': [
-      {
-        text: 'option.subcat.numberformat',
-        options: [
-          {
-            id: 'lang--decimalPoint',
-            pid: 'lang.decimalPoint',
-            dataType: 'string',
-            context: 'General',
-            defaults: '.',
-            parent: 'lang'
-          },
-          {
-            id: 'lang--thousandsSep',
-            pid: 'lang.thousandsSep',
-            dataType: 'string',
-            context: 'General',
-            defaults: ' ',
-            parent: 'lang'
-          }
-        ]
-      },
-      {
-        text: 'option.subcat.exportbutton',
-        options: [
-          {
-            id: 'lang--contextButtonTitle',
-            pid: 'lang.contextButtonTitle',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'Chart context menu',
-            parent: 'lang',
-            values: ''
-          },
-          {
-            id: 'lang--printChart',
-            pid: 'lang.printChart',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'Print chart',
-            parent: 'lang',
-            values: ''
-          },
-          {
-            id: 'lang--downloadPNG',
-            pid: 'lang.downloadPNG',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'Download PNG image',
-            parent: 'lang'
-          },
-          {
-            id: 'lang--downloadJPEG',
-            pid: 'lang.downloadJPEG',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'Download JPEG image',
-            parent: 'lang'
-          },
-          {
-            id: 'lang--downloadPDF',
-            pid: 'lang.downloadPDF',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'Download PDF document',
-            parent: 'lang'
-          },
-          {
-            id: 'lang--downloadSVG',
-            pid: 'lang.downloadSVG',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'Download SVG vector image',
-            parent: 'lang'
-          }
-        ]
-      },
-      {
-        text: 'option.subcat.zoombutton',
-        options: [
-          {
-            id: 'lang--resetZoom',
-            pid: 'lang.resetZoom',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'Reset zoom',
-            parent: 'lang'
-          }
-        ]
-      }
-    ],
-    'option.cat.credits': [
-      {
-        text: 'option.cat.credits',
-        options: [
-          {
-            id: 'credits--enabled',
-            pid: 'credits.enabled',
-            dataType: 'boolean',
-            context: 'General',
-            defaults: 'true',
-            parent: 'credits'
-          },
-          {
-            id: 'credits--text',
-            pid: 'credits.text',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'Highcharts.com',
-            parent: 'credits'
-          },
-          {
-            id: 'credits--href',
-            pid: 'credits.href',
-            dataType: 'string',
-            context: 'General',
-            defaults: 'http://www.highcharts.com',
-            parent: 'credits'
-          }
-        ]
-      }
-    ]
-  }
+            {
+                text: "option.subcat.legendappearance",
+                options: [
+                    {
+                        id: "legend--itemStyle",
+                        dataType: "font",
+                        pid: "legend.itemStyle",
+                        context: "General",
+                        defaults:
+                            '{ "color": "#333333", "cursor": "pointer", "fontSize": "12px", "fontWeight": "bold" }',
+                        parent: "legend",
+                    },
+                    {
+                        id: "legend--itemHiddenStyle",
+                        dataType: "font",
+                        pid: "legend.itemHiddenStyle",
+                        context: "General",
+                        defaults: '{ "color": "#cccccc" }',
+                        parent: "legend",
+                    },
+                    {
+                        id: "legend--backgroundColor",
+                        pid: "legend.backgroundColor",
+                        dataType: "color",
+                        context: "General",
+                        parent: "legend",
+                    },
+                    {
+                        id: "legend--borderWidth",
+                        pid: "legend.borderWidth",
+                        dataType: "number",
+                        context: "General",
+                        defaults: "0",
+                        parent: "legend",
+                    },
+                    {
+                        id: "legend--borderRadius",
+                        pid: "legend.borderRadius",
+                        dataType: "number",
+                        context: "General",
+                        defaults: "0",
+                        parent: "legend",
+                    },
+                    {
+                        id: "legend--borderColor",
+                        pid: "legend.borderColor",
+                        dataType: "color",
+                        context: "General",
+                        defaults: "#999999",
+                        parent: "legend",
+                    },
+                ],
+            },
+        ],
+        "option.cat.tooltip": [
+            {
+                text: "option.subcat.general",
+                options: [
+                    {
+                        id: "tooltip--enabled",
+                        pid: "tooltip.enabled",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "true",
+                        parent: "tooltip",
+                    },
+                    {
+                        id: "tooltip--shared",
+                        pid: "tooltip.shared",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "false",
+                        parent: "tooltip",
+                    },
+                ],
+            },
+            {
+                text: "option.subcat.colorborder",
+                options: [
+                    {
+                        id: "tooltip--backgroundColor",
+                        pid: "tooltip.backgroundColor",
+                        dataType: "color",
+                        context: "General",
+                        defaults: "rgba(247,247,247,0.85)",
+                        parent: "tooltip",
+                    },
+                    {
+                        id: "tooltip--borderWidth",
+                        custom: {
+                            minValue: 0,
+                        },
+                        pid: "tooltip.borderWidth",
+                        dataType: "number",
+                        context: "General",
+                        defaults: "1",
+                        parent: "tooltip",
+                    },
+                    {
+                        id: "tooltip--borderRadius",
+                        custom: {
+                            minValue: 0,
+                        },
+                        pid: "tooltip.borderRadius",
+                        dataType: "number",
+                        context: "General",
+                        defaults: "3",
+                        parent: "tooltip",
+                    },
+                    {
+                        id: "tooltip--borderColor",
+                        pid: "tooltip.borderColor",
+                        dataType: "color",
+                        context: "General",
+                        defaults: "null",
+                        parent: "tooltip",
+                    },
+                ],
+            },
+        ],
+        "option.cat.exporting": [
+            {
+                text: "option.cat.exporting",
+                options: [
+                    {
+                        id: "exporting--enabled",
+                        pid: "exporting.enabled",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "true",
+                        parent: "exporting",
+                    },
+                    {
+                        id: "exporting--sourceWidth",
+                        custom: {
+                            minValue: 10,
+                            maxValue: 2000,
+                            step: 10,
+                        },
+                        pid: "exporting.sourceWidth",
+                        dataType: "number",
+                        context: "General",
+                        parent: "exporting",
+                        values: "",
+                    },
+                    {
+                        id: "exporting--scale",
+                        custom: {
+                            minValue: 1,
+                            maxValue: 4,
+                        },
+                        pid: "exporting.scale",
+                        dataType: "number",
+                        context: "General",
+                        defaults: "2",
+                        parent: "exporting",
+                        values: "",
+                    },
+                ],
+            },
+        ],
+        "option.cat.localization": [
+            {
+                text: "option.subcat.numberformat",
+                options: [
+                    {
+                        id: "lang--decimalPoint",
+                        pid: "lang.decimalPoint",
+                        dataType: "string",
+                        context: "General",
+                        defaults: ".",
+                        parent: "lang",
+                    },
+                    {
+                        id: "lang--thousandsSep",
+                        pid: "lang.thousandsSep",
+                        dataType: "string",
+                        context: "General",
+                        defaults: " ",
+                        parent: "lang",
+                    },
+                ],
+            },
+            {
+                text: "option.subcat.exportbutton",
+                options: [
+                    {
+                        id: "lang--contextButtonTitle",
+                        pid: "lang.contextButtonTitle",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "Chart context menu",
+                        parent: "lang",
+                        values: "",
+                    },
+                    {
+                        id: "lang--printChart",
+                        pid: "lang.printChart",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "Print chart",
+                        parent: "lang",
+                        values: "",
+                    },
+                    {
+                        id: "lang--downloadPNG",
+                        pid: "lang.downloadPNG",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "Download PNG image",
+                        parent: "lang",
+                    },
+                    {
+                        id: "lang--downloadJPEG",
+                        pid: "lang.downloadJPEG",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "Download JPEG image",
+                        parent: "lang",
+                    },
+                    {
+                        id: "lang--downloadPDF",
+                        pid: "lang.downloadPDF",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "Download PDF document",
+                        parent: "lang",
+                    },
+                    {
+                        id: "lang--downloadSVG",
+                        pid: "lang.downloadSVG",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "Download SVG vector image",
+                        parent: "lang",
+                    },
+                ],
+            },
+            {
+                text: "option.subcat.zoombutton",
+                options: [
+                    {
+                        id: "lang--resetZoom",
+                        pid: "lang.resetZoom",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "Reset zoom",
+                        parent: "lang",
+                    },
+                ],
+            },
+        ],
+        "option.cat.credits": [
+            {
+                text: "option.cat.credits",
+                options: [
+                    {
+                        id: "credits--enabled",
+                        pid: "credits.enabled",
+                        dataType: "boolean",
+                        context: "General",
+                        defaults: "true",
+                        parent: "credits",
+                    },
+                    {
+                        id: "credits--text",
+                        pid: "credits.text",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "Highcharts.com",
+                        parent: "credits",
+                    },
+                    {
+                        id: "credits--href",
+                        pid: "credits.href",
+                        dataType: "string",
+                        context: "General",
+                        defaults: "http://www.highcharts.com",
+                        parent: "credits",
+                    },
+                ],
+            },
+        ],
+    },
 };
 
 /******************************************************************************
