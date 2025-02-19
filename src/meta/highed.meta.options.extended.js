@@ -1083,7 +1083,7 @@ highed.meta.optionsExtended = {
                         pid: "credits.enabled",
                         dataType: "boolean",
                         context: "General",
-                        defaults: "true",
+                        defaults: "false",
                         parent: "credits",
                     },
                     {
